@@ -1,0 +1,84 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BucketShare subscription service presets",
+  "type": "object",
+  "required": [
+    "version",
+    "services"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "emoji",
+          "categoryId",
+          "defaultCycle",
+          "countries"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^subscription\\.[a-z0-9_]+$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "emoji": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "categoryId": {
+            "type": "string"
+          },
+          "defaultCycle": {
+            "enum": [
+              "monthly",
+              "yearly"
+            ]
+          },
+          "countries": {
+            "type": "object",
+            "properties": {
+              "include": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^([A-Z]{2}|INTL)$"
+                }
+              },
+              "exclude": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^([A-Z]{2}|INTL)$"
+                }
+              }
+            },
+            "required": [
+              "include",
+              "exclude"
+            ]
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "deprecated": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

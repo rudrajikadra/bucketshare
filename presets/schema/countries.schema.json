@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BucketShare country packs",
+  "type": "object",
+  "required": [
+    "version",
+    "packs"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "code",
+          "name",
+          "flag",
+          "fyStart",
+          "defaultPayFrequency",
+          "terms",
+          "featuredExpenses",
+          "featuredIncome",
+          "taxEstimator",
+          "taxTables"
+        ],
+        "properties": {
+          "code": {
+            "type": "string",
+            "pattern": "^([A-Z]{2}|INTL)$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "flag": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "currency": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^[A-Z]{3}$"
+          },
+          "fyStart": {
+            "type": "string",
+            "pattern": "^(0[1-9]|1[0-2])-(0[1-9]|[12]\\d|3[01])$"
+          },
+          "defaultPayFrequency": {
+            "enum": [
+              "weekly",
+              "fortnightly",
+              "twiceMonthly",
+              "monthly"
+            ]
+          },
+          "weekStart": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 7
+          },
+          "terms": {
+            "type": "object",
+            "required": [
+              "regularInvesting",
+              "retirementAccount"
+            ],
+            "properties": {
+              "regularInvesting": {
+                "type": "string",
+                "minLength": 1
+              },
+              "retirementAccount": {
+                "type": "string",
+                "minLength": 1
+              },
+              "taxAuthority": {
+                "type": "string",
+                "minLength": 1
+              },
+              "studentLoan": {
+                "type": "string",
+                "minLength": 1
+              },
+              "mortgageOffset": {
+                "type": "string",
+                "minLength": 1
+              },
+              "vehicleRegistration": {
+                "type": "string",
+                "minLength": 1
+              },
+              "vehicleTax": {
+                "type": "string",
+                "minLength": 1
+              },
+              "roadworthinessInspection": {
+                "type": "string",
+                "minLength": 1
+              },
+              "compulsoryThirdParty": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "termsSources": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "featuredExpenses": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "featuredIncome": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "featuredSavings": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "taxEstimator": {
+            "enum": [
+              "full",
+              "federal",
+              "simplified",
+              "manual",
+              "none"
+            ]
+          },
+          "taxTables": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

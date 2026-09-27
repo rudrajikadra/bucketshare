@@ -1,0 +1,803 @@
+{
+  "version": 1,
+  "packs": [
+    {
+      "code": "AU",
+      "name": "Australia",
+      "flag": "🇦🇺",
+      "currency": "AUD",
+      "fyStart": "07-01",
+      "defaultPayFrequency": "fortnightly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Auto-invest (DCA)",
+        "retirementAccount": "Super",
+        "taxAuthority": "ATO",
+        "studentLoan": "HELP debt",
+        "mortgageOffset": "Offset account",
+        "vehicleRegistration": "Rego",
+        "roadworthinessInspection": "Roadworthy inspection",
+        "compulsoryThirdParty": "CTP (green slip)"
+      },
+      "termsSources": [
+        "https://www.ato.gov.au/tax-rates-and-codes/study-and-training-support-loans-rates-and-repayment-thresholds",
+        "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families",
+        "https://moneysmart.gov.au/home-loans",
+        "https://www.nsw.gov.au/driving-boating-and-transport/vehicle-registration",
+        "https://www.nsw.gov.au/driving-boating-and-transport/ctp-green-slip-insurance"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.transport.compulsory_third_party",
+        "expense.housing.council_rates",
+        "expense.health.health_insurance",
+        "expense.housing.strata"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.employment.holiday_pay",
+        "income.investments.dividends",
+        "income.investments.interest",
+        "income.other.tax_refund"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "saving.savings.offset",
+        "saving.savings.fhss",
+        "investing.retirement.super_salary_sacrifice",
+        "investing.investing.etfs"
+      ],
+      "taxEstimator": "full",
+      "taxTables": [
+        "AU-2025-26",
+        "AU-2026-27"
+      ]
+    },
+    {
+      "code": "NZ",
+      "name": "New Zealand",
+      "flag": "🇳🇿",
+      "currency": "NZD",
+      "fyStart": "04-01",
+      "defaultPayFrequency": "fortnightly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Regular investing",
+        "retirementAccount": "KiwiSaver",
+        "taxAuthority": "IRD",
+        "studentLoan": "Student loan",
+        "vehicleRegistration": "Rego (vehicle licensing)",
+        "roadworthinessInspection": "WOF"
+      },
+      "termsSources": [
+        "https://www.ird.govt.nz/kiwisaver",
+        "https://www.nzta.govt.nz/vehicles/licensing-rego/",
+        "https://www.nzta.govt.nz/vehicles/warrants-and-certificates/warrant-of-fitness/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.transport.roadworthiness_inspection",
+        "expense.housing.council_rates"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest",
+        "income.investments.dividends"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.retirement.kiwisaver",
+        "investing.investing.pie_funds",
+        "investing.investing.etfs"
+      ],
+      "taxEstimator": "full",
+      "taxTables": [
+        "NZ-2025-26",
+        "NZ-2026-27"
+      ]
+    },
+    {
+      "code": "GB",
+      "name": "United Kingdom",
+      "flag": "🇬🇧",
+      "currency": "GBP",
+      "fyStart": "04-06",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Regular investing",
+        "retirementAccount": "Workplace pension, SIPP",
+        "taxAuthority": "HMRC",
+        "studentLoan": "Student loan (Plan 1, 2, 4 or 5)",
+        "vehicleTax": "Vehicle tax (VED)",
+        "roadworthinessInspection": "MOT",
+        "compulsoryThirdParty": "Third-party car insurance"
+      },
+      "termsSources": [
+        "https://www.gov.uk/vehicle-tax",
+        "https://www.gov.uk/getting-an-mot",
+        "https://www.gov.uk/workplace-pensions",
+        "https://www.gov.uk/individual-savings-accounts",
+        "https://www.gov.uk/repaying-your-student-loan"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.housing.council_rates",
+        "expense.utilities.tv_licence",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest",
+        "income.investments.dividends",
+        "income.retirement_government.government_benefits"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "saving.savings.cash_isa",
+        "investing.investing.stocks_shares_isa",
+        "saving.savings.lifetime_isa",
+        "investing.retirement.sipp"
+      ],
+      "taxEstimator": "full",
+      "taxTables": [
+        "GB-2025-26",
+        "GB-2026-27",
+        "GB-SCT-2025-26",
+        "GB-SCT-2026-27"
+      ]
+    },
+    {
+      "code": "IE",
+      "name": "Ireland",
+      "flag": "🇮🇪",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Regular investing",
+        "retirementAccount": "PRSA, occupational pension",
+        "taxAuthority": "Revenue",
+        "studentLoan": "Student loan",
+        "vehicleTax": "Motor tax",
+        "roadworthinessInspection": "NCT"
+      },
+      "termsSources": [
+        "https://www.revenue.ie/en/jobs-and-pensions/pensions/prsa.aspx",
+        "https://www.motortax.ie/",
+        "https://www.ncts.ie/",
+        "https://www.statesavings.ie/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.housing.council_rates",
+        "expense.utilities.tv_licence",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.health.health_insurance"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.retirement.prsa",
+        "saving.savings.state_savings",
+        "saving.savings.prize_bonds"
+      ],
+      "taxEstimator": "full",
+      "taxTables": [
+        "IE-2025",
+        "IE-2026"
+      ]
+    },
+    {
+      "code": "US",
+      "name": "United States",
+      "flag": "🇺🇸",
+      "currency": "USD",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "fortnightly",
+      "weekStart": 1,
+      "terms": {
+        "regularInvesting": "Auto-invest (DCA)",
+        "retirementAccount": "401(k), IRA",
+        "taxAuthority": "IRS",
+        "studentLoan": "Federal student loans",
+        "vehicleRegistration": "DMV registration",
+        "roadworthinessInspection": "Vehicle inspection"
+      },
+      "termsSources": [
+        "https://www.irs.gov/retirement-plans/401k-plans",
+        "https://www.irs.gov/retirement-plans/individual-retirement-arrangements-iras",
+        "https://studentaid.gov/manage-loans/repayment",
+        "https://www.usa.gov/motor-vehicle-services"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.housing.council_rates",
+        "expense.health.health_insurance",
+        "expense.education.student_loan"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.dividends",
+        "income.investments.interest",
+        "income.other.tax_refund"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "saving.savings.high_interest",
+        "investing.retirement.k401",
+        "investing.retirement.roth_ira",
+        "saving.savings.hsa"
+      ],
+      "taxEstimator": "federal",
+      "taxTables": [
+        "US-2025",
+        "US-2026"
+      ]
+    },
+    {
+      "code": "CA",
+      "name": "Canada",
+      "flag": "🇨🇦",
+      "currency": "CAD",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "fortnightly",
+      "weekStart": 1,
+      "terms": {
+        "regularInvesting": "Pre-authorised contribution (PAC)",
+        "retirementAccount": "RRSP",
+        "taxAuthority": "CRA",
+        "studentLoan": "Canada Student Loan",
+        "vehicleRegistration": "Registration renewal",
+        "roadworthinessInspection": "Safety inspection"
+      },
+      "termsSources": [
+        "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans.html",
+        "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account.html",
+        "https://www.ontario.ca/page/renew-licence-plate-sticker"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.housing.council_rates",
+        "expense.housing.strata"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.dividends",
+        "income.investments.interest",
+        "income.retirement_government.government_benefits"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.retirement.rrsp",
+        "investing.investing.tfsa",
+        "saving.savings.fhsa",
+        "saving.savings.resp"
+      ],
+      "taxEstimator": "federal",
+      "taxTables": [
+        "CA-2025",
+        "CA-2026"
+      ]
+    },
+    {
+      "code": "IN",
+      "name": "India",
+      "flag": "🇮🇳",
+      "currency": "INR",
+      "fyStart": "04-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 1,
+      "terms": {
+        "regularInvesting": "SIP",
+        "retirementAccount": "EPF, NPS, PPF",
+        "taxAuthority": "Income Tax Department",
+        "studentLoan": "Education loan",
+        "vehicleRegistration": "RC renewal",
+        "roadworthinessInspection": "PUC certificate",
+        "compulsoryThirdParty": "Third-party insurance"
+      },
+      "termsSources": [
+        "https://www.amfiindia.com/investor-corner/knowledge-center/SIP.html",
+        "https://www.epfindia.gov.in/",
+        "https://www.npstrust.org.in/",
+        "https://parivahan.gov.in/",
+        "https://www.incometax.gov.in/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.utilities.gas",
+        "expense.transport.compulsory_third_party",
+        "expense.transport.roadworthiness_inspection",
+        "expense.housing.strata",
+        "expense.insurance.life",
+        "expense.family.elder_care"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.employment.allowances",
+        "income.investments.interest",
+        "income.investments.dividends"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.sip",
+        "investing.retirement.epf",
+        "saving.savings.ppf",
+        "investing.retirement.nps",
+        "saving.savings.term_deposit"
+      ],
+      "taxEstimator": "full",
+      "taxTables": [
+        "IN-2025-26",
+        "IN-2025-26-OLD",
+        "IN-2026-27",
+        "IN-2026-27-OLD"
+      ]
+    },
+    {
+      "code": "DE",
+      "name": "Germany",
+      "flag": "🇩🇪",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Sparplan",
+        "retirementAccount": "bAV, Riester, Rürup",
+        "taxAuthority": "Finanzamt",
+        "studentLoan": "BAföG-Rückzahlung",
+        "vehicleTax": "Kfz-Steuer",
+        "roadworthinessInspection": "HU (TÜV)",
+        "compulsoryThirdParty": "Kfz-Haftpflicht"
+      },
+      "termsSources": [
+        "https://www.zoll.de/DE/Privatpersonen/Kraftfahrzeugsteuer/kraftfahrzeugsteuer_node.html",
+        "https://www.bmf-steuerrechner.de/",
+        "https://www.deutsche-rentenversicherung.de/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.utilities.tv_licence",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.transport.compulsory_third_party"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest",
+        "income.investments.dividends"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "saving.savings.tagesgeld",
+        "investing.investing.etf_sparplan",
+        "investing.retirement.bav",
+        "investing.retirement.riester"
+      ],
+      "taxEstimator": "simplified",
+      "taxTables": [
+        "DE-2025",
+        "DE-2026"
+      ]
+    },
+    {
+      "code": "FR",
+      "name": "France",
+      "flag": "🇫🇷",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Versements programmés",
+        "retirementAccount": "PER",
+        "taxAuthority": "DGFiP",
+        "roadworthinessInspection": "Contrôle technique"
+      },
+      "termsSources": [
+        "https://www.service-public.fr/particuliers/vosdroits/F2804",
+        "https://www.economie.gouv.fr/particuliers/epargne-retraite-per"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.roadworthiness_inspection",
+        "expense.housing.council_rates"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "saving.savings.livret_a",
+        "investing.investing.pea",
+        "investing.investing.assurance_vie",
+        "investing.retirement.per"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "NL",
+      "name": "Netherlands",
+      "flag": "🇳🇱",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Periodiek beleggen",
+        "retirementAccount": "Pensioen, lijfrente",
+        "taxAuthority": "Belastingdienst",
+        "vehicleTax": "Motorrijtuigenbelasting",
+        "roadworthinessInspection": "APK"
+      },
+      "termsSources": [
+        "https://www.belastingdienst.nl/wps/wcm/connect/nl/auto-en-vervoer/auto-en-vervoer",
+        "https://www.rdw.nl/particulier/voertuigen/auto/apk"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.health.health_insurance"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.etfs",
+        "investing.retirement.contribution"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "ES",
+      "name": "Spain",
+      "flag": "🇪🇸",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Aportación periódica",
+        "retirementAccount": "Plan de pensiones",
+        "taxAuthority": "Agencia Tributaria",
+        "vehicleTax": "IVTM",
+        "roadworthinessInspection": "ITV"
+      },
+      "termsSources": [
+        "https://www.dgt.es/",
+        "https://sede.agenciatributaria.gob.es/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.housing.council_rates"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.etfs",
+        "investing.retirement.contribution"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "IT",
+      "name": "Italy",
+      "flag": "🇮🇹",
+      "currency": "EUR",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "PAC",
+        "retirementAccount": "Fondo pensione",
+        "taxAuthority": "Agenzia delle Entrate",
+        "vehicleTax": "Bollo auto",
+        "roadworthinessInspection": "Revisione"
+      },
+      "termsSources": [
+        "https://www.agenziaentrate.gov.it/portale/",
+        "https://www.ilportaledellautomobilista.it/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.housing.council_rates"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.etfs",
+        "investing.retirement.contribution"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "SG",
+      "name": "Singapore",
+      "flag": "🇸🇬",
+      "currency": "SGD",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 1,
+      "terms": {
+        "regularInvesting": "Regular savings plan",
+        "retirementAccount": "CPF, SRS",
+        "taxAuthority": "IRAS",
+        "vehicleRegistration": "COE",
+        "vehicleTax": "Road tax"
+      },
+      "termsSources": [
+        "https://www.cpf.gov.sg/",
+        "https://www.iras.gov.sg/taxes/individual-income-tax/basics-of-individual-income-tax/tax-reliefs-rebates-and-deductions/tax-reliefs/supplementary-retirement-scheme-(srs)-relief",
+        "https://onemotoring.lta.gov.sg/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_tax",
+        "expense.transport.vehicle_registration",
+        "expense.transport.public_transport"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.employment.bonus",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.retirement.cpf_topup",
+        "investing.retirement.srs",
+        "investing.investing.etfs"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "AE",
+      "name": "United Arab Emirates",
+      "flag": "🇦🇪",
+      "currency": "AED",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Regular investing",
+        "retirementAccount": "End-of-service gratuity",
+        "taxAuthority": "Federal Tax Authority",
+        "vehicleRegistration": "Registration renewal"
+      },
+      "termsSources": [
+        "https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector",
+        "https://tax.gov.ae/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.financial.remittance"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.employment.allowances"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.etfs"
+      ],
+      "taxEstimator": "none",
+      "taxTables": []
+    },
+    {
+      "code": "JP",
+      "name": "Japan",
+      "flag": "🇯🇵",
+      "currency": "JPY",
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 1,
+      "terms": {
+        "regularInvesting": "Tsumitate (NISA)",
+        "retirementAccount": "iDeCo",
+        "taxAuthority": "National Tax Agency",
+        "vehicleTax": "Automobile tax",
+        "roadworthinessInspection": "Shaken",
+        "compulsoryThirdParty": "Compulsory insurance (jibaiseki)"
+      },
+      "termsSources": [
+        "https://www.fsa.go.jp/policy/nisa2/",
+        "https://www.ideco-koushiki.jp/",
+        "https://www.mlit.go.jp/jidosha/"
+      ],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_tax",
+        "expense.transport.roadworthiness_inspection",
+        "expense.transport.compulsory_third_party"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.employment.bonus"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.nisa",
+        "investing.retirement.ideco"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    },
+    {
+      "code": "INTL",
+      "name": "International",
+      "flag": "🌐",
+      "currency": null,
+      "fyStart": "01-01",
+      "defaultPayFrequency": "monthly",
+      "weekStart": 2,
+      "terms": {
+        "regularInvesting": "Regular investing (DCA)",
+        "retirementAccount": "Retirement",
+        "taxAuthority": "Tax authority",
+        "studentLoan": "Student loan",
+        "vehicleRegistration": "Registration",
+        "roadworthinessInspection": "Inspection"
+      },
+      "termsSources": [],
+      "featuredExpenses": [
+        "expense.housing.rent",
+        "expense.housing.mortgage",
+        "expense.utilities.electricity",
+        "expense.utilities.internet",
+        "expense.utilities.mobile",
+        "expense.food.groceries",
+        "expense.transport.fuel",
+        "expense.transport.car_insurance",
+        "expense.transport.vehicle_registration",
+        "expense.transport.roadworthiness_inspection"
+      ],
+      "featuredIncome": [
+        "income.employment.salary",
+        "income.investments.interest"
+      ],
+      "featuredSavings": [
+        "saving.savings.emergency_fund",
+        "investing.investing.etfs",
+        "investing.retirement.contribution"
+      ],
+      "taxEstimator": "manual",
+      "taxTables": []
+    }
+  ]
+}

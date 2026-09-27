@@ -1,0 +1,4925 @@
+{
+  "version": 1,
+  "parents": [
+    {
+      "key": "employment",
+      "kind": "income",
+      "name": "Employment",
+      "emoji": "💼",
+      "group": "income"
+    },
+    {
+      "key": "self_employed",
+      "kind": "income",
+      "name": "Self-employed and gigs",
+      "emoji": "🧑‍💻",
+      "group": "income"
+    },
+    {
+      "key": "creator",
+      "kind": "income",
+      "name": "Creator and digital",
+      "emoji": "▶️",
+      "group": "income"
+    },
+    {
+      "key": "property",
+      "kind": "income",
+      "name": "Property",
+      "emoji": "🏠",
+      "group": "income"
+    },
+    {
+      "key": "investments",
+      "kind": "income",
+      "name": "Investments",
+      "emoji": "💵",
+      "group": "income"
+    },
+    {
+      "key": "retirement_government",
+      "kind": "income",
+      "name": "Retirement and government",
+      "emoji": "🏛️",
+      "group": "income"
+    },
+    {
+      "key": "other",
+      "kind": "income",
+      "name": "Other income",
+      "emoji": "➕",
+      "group": "income"
+    },
+    {
+      "key": "housing",
+      "kind": "expense",
+      "name": "Housing",
+      "emoji": "🏠",
+      "group": "needs"
+    },
+    {
+      "key": "utilities",
+      "kind": "expense",
+      "name": "Utilities",
+      "emoji": "⚡",
+      "group": "needs"
+    },
+    {
+      "key": "food",
+      "kind": "expense",
+      "name": "Food",
+      "emoji": "🛒"
+    },
+    {
+      "key": "transport",
+      "kind": "expense",
+      "name": "Transport",
+      "emoji": "🚗",
+      "group": "needs"
+    },
+    {
+      "key": "health",
+      "kind": "expense",
+      "name": "Health",
+      "emoji": "🩺",
+      "group": "needs"
+    },
+    {
+      "key": "insurance",
+      "kind": "expense",
+      "name": "Other insurance",
+      "emoji": "❤️",
+      "group": "needs"
+    },
+    {
+      "key": "personal",
+      "kind": "expense",
+      "name": "Personal",
+      "emoji": "👕",
+      "group": "wants"
+    },
+    {
+      "key": "family",
+      "kind": "expense",
+      "name": "Family and kids",
+      "emoji": "🧸",
+      "group": "needs"
+    },
+    {
+      "key": "education",
+      "kind": "expense",
+      "name": "Education",
+      "emoji": "🎓",
+      "group": "needs"
+    },
+    {
+      "key": "subscriptions",
+      "kind": "expense",
+      "name": "Subscriptions and fun",
+      "emoji": "🎬",
+      "group": "wants"
+    },
+    {
+      "key": "pets",
+      "kind": "expense",
+      "name": "Pets",
+      "emoji": "🐶",
+      "group": "needs"
+    },
+    {
+      "key": "travel",
+      "kind": "expense",
+      "name": "Travel",
+      "emoji": "✈️",
+      "group": "wants"
+    },
+    {
+      "key": "financial",
+      "kind": "expense",
+      "name": "Financial",
+      "emoji": "🏦",
+      "group": "needs"
+    },
+    {
+      "key": "giving",
+      "kind": "expense",
+      "name": "Giving",
+      "emoji": "💝",
+      "group": "wants"
+    },
+    {
+      "key": "work",
+      "kind": "expense",
+      "name": "Work",
+      "emoji": "💻",
+      "group": "needs"
+    },
+    {
+      "key": "system",
+      "kind": "expense",
+      "name": "System",
+      "emoji": "🧩",
+      "group": "other"
+    },
+    {
+      "key": "savings",
+      "kind": "saving",
+      "name": "Savings",
+      "emoji": "🆘",
+      "group": "savings"
+    },
+    {
+      "key": "investing",
+      "kind": "investing",
+      "name": "Investing",
+      "emoji": "📈",
+      "group": "investing"
+    },
+    {
+      "key": "retirement",
+      "kind": "investing",
+      "name": "Retirement",
+      "emoji": "🧓",
+      "group": "investing"
+    },
+    {
+      "key": "transfers",
+      "kind": "transfer",
+      "name": "Transfers",
+      "emoji": "🔁",
+      "group": "transfer"
+    }
+  ],
+  "presets": [
+    {
+      "id": "income.employment.salary",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "💼",
+      "name": "Salary or wages",
+      "localNames": {
+        "US": "Paycheck"
+      },
+      "keywords": [
+        "salary",
+        "wages",
+        "pay",
+        "paycheck",
+        "payslip"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Your regular take-home pay"
+    },
+    {
+      "id": "income.employment.overtime",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "⏱️",
+      "name": "Overtime",
+      "keywords": [
+        "overtime",
+        "extra hours",
+        "penalty rates"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.employment.bonus",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "🎯",
+      "name": "Bonus",
+      "keywords": [
+        "bonus",
+        "incentive",
+        "performance"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.employment.commission",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "🤝",
+      "name": "Commission",
+      "keywords": [
+        "commission",
+        "sales"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.employment.tips",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "💁",
+      "name": "Tips",
+      "keywords": [
+        "tips",
+        "gratuity"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.employment.allowances",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "🧾",
+      "name": "Allowances",
+      "localNames": {
+        "IN": "Allowances (HRA, LTA)"
+      },
+      "keywords": [
+        "allowance",
+        "car allowance",
+        "meal allowance",
+        "HRA"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.employment.holiday_pay",
+      "kind": "income",
+      "group": "income",
+      "parent": "employment",
+      "emoji": "🏖️",
+      "name": "Holiday pay or leave loading",
+      "localNames": {
+        "AU": "Leave loading",
+        "GB": "Holiday pay"
+      },
+      "keywords": [
+        "holiday pay",
+        "leave loading",
+        "annual leave"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.freelance",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🧑‍💻",
+      "name": "Freelance or contract",
+      "keywords": [
+        "freelance",
+        "contract",
+        "contractor",
+        "invoice",
+        "consulting"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.business",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🏪",
+      "name": "Business income",
+      "keywords": [
+        "business",
+        "sole trader",
+        "self-employed",
+        "drawings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.rideshare_delivery",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🛵",
+      "name": "Rideshare and delivery",
+      "keywords": [
+        "uber",
+        "rideshare",
+        "delivery",
+        "gig",
+        "doordash"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.tutoring",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🧑‍🏫",
+      "name": "Tutoring",
+      "keywords": [
+        "tutoring",
+        "lessons",
+        "teaching"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.babysitting_petsitting",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🍼",
+      "name": "Babysitting or pet sitting",
+      "keywords": [
+        "babysitting",
+        "pet sitting",
+        "dog walking",
+        "nanny"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.self_employed.odd_jobs",
+      "kind": "income",
+      "group": "income",
+      "parent": "self_employed",
+      "emoji": "🛠️",
+      "name": "Odd jobs",
+      "keywords": [
+        "odd jobs",
+        "side hustle",
+        "handyman",
+        "cash job"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.ad_revenue",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "▶️",
+      "name": "YouTube or ad revenue",
+      "keywords": [
+        "youtube",
+        "adsense",
+        "ad revenue",
+        "creator"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.sponsorships",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "📣",
+      "name": "Sponsorships",
+      "keywords": [
+        "sponsorship",
+        "brand deal",
+        "influencer"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.memberships",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "🌟",
+      "name": "Memberships (Patreon etc.)",
+      "keywords": [
+        "patreon",
+        "memberships",
+        "subscribers",
+        "ko-fi"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.affiliate",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "🔗",
+      "name": "Affiliate income",
+      "keywords": [
+        "affiliate",
+        "referral",
+        "commission links"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.digital_products",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "📱",
+      "name": "App and digital product sales",
+      "keywords": [
+        "app store",
+        "digital products",
+        "ebook",
+        "templates"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.course_sales",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "🎓",
+      "name": "Course sales",
+      "keywords": [
+        "course",
+        "online course",
+        "workshop"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.royalties",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "📚",
+      "name": "Royalties",
+      "keywords": [
+        "royalties",
+        "book",
+        "music royalties"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.creator.licensing",
+      "kind": "income",
+      "group": "income",
+      "parent": "creator",
+      "emoji": "🖼️",
+      "name": "Licensing (stock photos, music)",
+      "keywords": [
+        "licensing",
+        "stock photos",
+        "stock footage",
+        "music licensing"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.property.rental",
+      "kind": "income",
+      "group": "income",
+      "parent": "property",
+      "emoji": "🏠",
+      "name": "Rental income",
+      "keywords": [
+        "rent received",
+        "rental",
+        "tenant",
+        "landlord"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.property.room_rent",
+      "kind": "income",
+      "group": "income",
+      "parent": "property",
+      "emoji": "🛏️",
+      "name": "Room or boarder rent",
+      "keywords": [
+        "room",
+        "boarder",
+        "lodger",
+        "flatmate"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.property.short_stay",
+      "kind": "income",
+      "group": "income",
+      "parent": "property",
+      "emoji": "🏝️",
+      "name": "Short-stay rental",
+      "keywords": [
+        "airbnb",
+        "short stay",
+        "holiday rental",
+        "vrbo"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.property.parking_storage",
+      "kind": "income",
+      "group": "income",
+      "parent": "property",
+      "emoji": "🅿️",
+      "name": "Parking or storage rental",
+      "keywords": [
+        "parking",
+        "car space",
+        "storage"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.dividends",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "💵",
+      "name": "Dividends",
+      "keywords": [
+        "dividends",
+        "distribution",
+        "franking",
+        "DRP"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.interest",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "🏦",
+      "name": "Interest (savings, term deposit, FD, CD)",
+      "localNames": {
+        "IN": "Interest (savings, FD, RD)",
+        "US": "Interest (savings, CD)",
+        "CA": "Interest (savings, GIC)"
+      },
+      "keywords": [
+        "interest",
+        "savings interest",
+        "term deposit",
+        "FD",
+        "CD",
+        "GIC"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.bond_coupons",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "📜",
+      "name": "Bond coupons",
+      "keywords": [
+        "bond",
+        "coupon",
+        "treasury",
+        "gilt"
+      ],
+      "defaultFrequency": "halfYearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.capital_gains",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "📈",
+      "name": "Realised capital gains",
+      "keywords": [
+        "capital gains",
+        "sold shares",
+        "profit"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.crypto_rewards",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "🪙",
+      "name": "Crypto staking and rewards",
+      "keywords": [
+        "crypto",
+        "staking",
+        "rewards",
+        "yield"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.investments.p2p_lending",
+      "kind": "income",
+      "group": "income",
+      "parent": "investments",
+      "emoji": "🤲",
+      "name": "Peer-to-peer lending",
+      "keywords": [
+        "peer to peer",
+        "p2p",
+        "lending"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.retirement_government.pension",
+      "kind": "income",
+      "group": "income",
+      "parent": "retirement_government",
+      "emoji": "👵",
+      "name": "Pension or retirement income",
+      "localNames": {
+        "AU": "Super pension or Age Pension",
+        "US": "Social Security or pension",
+        "GB": "State or private pension"
+      },
+      "keywords": [
+        "pension",
+        "retirement",
+        "annuity",
+        "super pension",
+        "social security"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.retirement_government.government_benefits",
+      "kind": "income",
+      "group": "income",
+      "parent": "retirement_government",
+      "emoji": "🏛️",
+      "name": "Government benefits (family, child, unemployment, disability, carer)",
+      "localNames": {
+        "AU": "Centrelink payments",
+        "GB": "Benefits (Universal Credit, Child Benefit)",
+        "NZ": "Work and Income payments",
+        "CA": "Government benefits (CCB, EI)"
+      },
+      "keywords": [
+        "benefits",
+        "centrelink",
+        "child benefit",
+        "universal credit",
+        "family tax benefit",
+        "welfare"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.retirement_government.student_allowance",
+      "kind": "income",
+      "group": "income",
+      "parent": "retirement_government",
+      "emoji": "🎓",
+      "name": "Student allowance, stipend or scholarship",
+      "keywords": [
+        "student allowance",
+        "stipend",
+        "scholarship",
+        "austudy",
+        "youth allowance"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.gifts_received",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "🎁",
+      "name": "Gifts received",
+      "keywords": [
+        "gift",
+        "present",
+        "birthday money"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.tax_refund",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "🧾",
+      "name": "Tax refund",
+      "localNames": {
+        "AU": "Tax refund (ATO)",
+        "US": "Tax refund (IRS)",
+        "IN": "Income tax refund",
+        "GB": "Tax rebate (HMRC)"
+      },
+      "keywords": [
+        "tax refund",
+        "tax return",
+        "ATO",
+        "IRS",
+        "HMRC"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.cashback_rewards",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "💳",
+      "name": "Cashback and rewards",
+      "keywords": [
+        "cashback",
+        "rewards",
+        "points"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.reimbursements",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "🔁",
+      "name": "Reimbursements",
+      "keywords": [
+        "reimbursement",
+        "expense claim",
+        "refund",
+        "paid back"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.selling_items",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "🛍️",
+      "name": "Selling items",
+      "keywords": [
+        "sold",
+        "marketplace",
+        "ebay",
+        "garage sale"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.family_support",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "👪",
+      "name": "Family support received",
+      "keywords": [
+        "family support",
+        "parents",
+        "help from family"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.child_support_received",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "⚖️",
+      "name": "Child support or maintenance received",
+      "keywords": [
+        "child support",
+        "maintenance",
+        "alimony"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.inheritance",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "🏷️",
+      "name": "Inheritance",
+      "keywords": [
+        "inheritance",
+        "estate",
+        "bequest"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "income.other.other",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "➕",
+      "name": "Other income",
+      "keywords": [
+        "other",
+        "misc income"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.rent",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🏠",
+      "name": "Rent",
+      "keywords": [
+        "rent",
+        "lease",
+        "landlord",
+        "tenancy"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "What you pay to live in a rented home"
+    },
+    {
+      "id": "expense.housing.mortgage",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🏡",
+      "name": "Mortgage repayment",
+      "localNames": {
+        "IN": "Home loan EMI",
+        "AU": "Home loan repayment"
+      },
+      "keywords": [
+        "mortgage",
+        "home loan",
+        "repayment",
+        "EMI"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.strata",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🏢",
+      "name": "Strata, body corporate, HOA or society maintenance",
+      "localNames": {
+        "AU": "Strata levies",
+        "NZ": "Body corporate levies",
+        "US": "HOA dues",
+        "CA": "Condo fees",
+        "GB": "Service charge",
+        "IN": "Society maintenance"
+      },
+      "keywords": [
+        "strata",
+        "body corporate",
+        "HOA",
+        "society maintenance",
+        "service charge",
+        "condo fees"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.council_rates",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🏛️",
+      "name": "Council rates, council tax or property tax",
+      "localNames": {
+        "AU": "Council rates",
+        "NZ": "Council rates",
+        "GB": "Council tax",
+        "US": "Property tax",
+        "CA": "Property tax",
+        "IN": "Property tax",
+        "IE": "Local Property Tax",
+        "DE": "Grundsteuer",
+        "FR": "Taxe foncière",
+        "ES": "IBI (property tax)",
+        "IT": "IMU (property tax)"
+      },
+      "keywords": [
+        "council rates",
+        "council tax",
+        "property tax",
+        "municipal"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.home_insurance",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🛡️",
+      "name": "Home, contents or renters insurance",
+      "keywords": [
+        "home insurance",
+        "contents insurance",
+        "renters insurance",
+        "building insurance"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.repairs",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🔧",
+      "name": "Repairs and maintenance",
+      "keywords": [
+        "repairs",
+        "maintenance",
+        "plumber",
+        "electrician",
+        "handyman"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.cleaning",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🧹",
+      "name": "Cleaning and domestic help",
+      "keywords": [
+        "cleaning",
+        "cleaner",
+        "maid",
+        "domestic help",
+        "housekeeping"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.furniture",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🛋️",
+      "name": "Furniture and appliances",
+      "keywords": [
+        "furniture",
+        "appliances",
+        "sofa",
+        "fridge",
+        "washing machine"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.garden_pest",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🌿",
+      "name": "Garden and pest control",
+      "keywords": [
+        "garden",
+        "gardener",
+        "lawn",
+        "pest control"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.housing.bond",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "housing",
+      "emoji": "🔑",
+      "name": "Bond or security deposit",
+      "localNames": {
+        "AU": "Rental bond",
+        "US": "Security deposit",
+        "GB": "Tenancy deposit"
+      },
+      "keywords": [
+        "bond",
+        "security deposit",
+        "rental deposit"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.electricity",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "⚡",
+      "name": "Electricity",
+      "localNames": {
+        "GB": "Electricity (energy bill)"
+      },
+      "keywords": [
+        "electricity",
+        "power",
+        "energy bill"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.gas",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "🔥",
+      "name": "Gas (piped or LPG cylinder)",
+      "localNames": {
+        "IN": "LPG cylinder"
+      },
+      "keywords": [
+        "gas",
+        "LPG",
+        "cylinder",
+        "heating"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.water",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "💧",
+      "name": "Water",
+      "keywords": [
+        "water",
+        "sewerage",
+        "water rates"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.internet",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "🌐",
+      "name": "Internet",
+      "localNames": {
+        "AU": "Internet (NBN)",
+        "GB": "Broadband"
+      },
+      "keywords": [
+        "internet",
+        "broadband",
+        "NBN",
+        "fibre",
+        "wifi"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.mobile",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "📱",
+      "name": "Mobile plan or recharge",
+      "localNames": {
+        "US": "Cell phone plan",
+        "CA": "Cell phone plan",
+        "IN": "Mobile recharge"
+      },
+      "keywords": [
+        "mobile",
+        "phone plan",
+        "recharge",
+        "cell phone",
+        "SIM"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.landline",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "☎️",
+      "name": "Landline",
+      "keywords": [
+        "landline",
+        "home phone"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.tv_licence",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "📺",
+      "name": "TV licence or broadcasting fee",
+      "localNames": {
+        "GB": "TV Licence",
+        "IE": "TV licence",
+        "DE": "Rundfunkbeitrag"
+      },
+      "keywords": [
+        "TV licence",
+        "broadcasting fee",
+        "Rundfunkbeitrag",
+        "licence fee"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB",
+          "IE",
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.pay_tv",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "🛰️",
+      "name": "Pay TV or DTH",
+      "localNames": {
+        "IN": "DTH recharge",
+        "US": "Cable TV"
+      },
+      "keywords": [
+        "pay TV",
+        "cable",
+        "satellite",
+        "DTH",
+        "foxtel",
+        "sky"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.utilities.waste",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "utilities",
+      "emoji": "🗑️",
+      "name": "Waste collection",
+      "keywords": [
+        "waste",
+        "rubbish",
+        "garbage",
+        "bin collection"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.groceries",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "food",
+      "emoji": "🛒",
+      "name": "Groceries",
+      "keywords": [
+        "groceries",
+        "supermarket",
+        "woolworths",
+        "coles",
+        "aldi",
+        "tesco",
+        "kirana"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.work_school_lunches",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "food",
+      "emoji": "🍱",
+      "name": "Work or school lunches",
+      "keywords": [
+        "lunch",
+        "canteen",
+        "tiffin",
+        "school lunch"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.dining_out",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "food",
+      "emoji": "🍽️",
+      "name": "Dining out",
+      "keywords": [
+        "restaurant",
+        "dining",
+        "dinner out",
+        "brunch"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.takeaway",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "food",
+      "emoji": "🥡",
+      "name": "Takeaway and delivery",
+      "localNames": {
+        "US": "Takeout and delivery",
+        "CA": "Takeout and delivery"
+      },
+      "keywords": [
+        "takeaway",
+        "takeout",
+        "delivery",
+        "uber eats",
+        "swiggy",
+        "zomato",
+        "deliveroo"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.coffee",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "food",
+      "emoji": "☕",
+      "name": "Coffee",
+      "keywords": [
+        "coffee",
+        "cafe",
+        "latte"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.food.alcohol",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "food",
+      "emoji": "🍷",
+      "name": "Alcohol",
+      "keywords": [
+        "alcohol",
+        "wine",
+        "beer",
+        "bottle shop",
+        "liquor"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.fuel",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "⛽",
+      "name": "Fuel",
+      "localNames": {
+        "US": "Gas (fuel)",
+        "CA": "Gas (fuel)"
+      },
+      "keywords": [
+        "fuel",
+        "petrol",
+        "gas",
+        "diesel"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.ev_charging",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🔌",
+      "name": "EV charging",
+      "keywords": [
+        "EV",
+        "charging",
+        "electric vehicle",
+        "supercharger"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.public_transport",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🚆",
+      "name": "Public transport",
+      "localNames": {
+        "US": "Public transit",
+        "CA": "Public transit"
+      },
+      "keywords": [
+        "public transport",
+        "train",
+        "bus",
+        "metro",
+        "opal",
+        "myki",
+        "oyster"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.taxi_rideshare",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🚕",
+      "name": "Taxi and rideshare",
+      "keywords": [
+        "taxi",
+        "uber",
+        "rideshare",
+        "ola",
+        "lyft",
+        "cab"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.parking",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🅿️",
+      "name": "Parking",
+      "keywords": [
+        "parking",
+        "car park",
+        "meter"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.tolls",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🛣️",
+      "name": "Tolls",
+      "localNames": {
+        "IN": "FASTag tolls"
+      },
+      "keywords": [
+        "tolls",
+        "e-tag",
+        "linkt",
+        "FASTag",
+        "e-toll"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.car_loan",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🚗",
+      "name": "Car loan or lease",
+      "localNames": {
+        "AU": "Car loan or novated lease",
+        "IN": "Car loan EMI"
+      },
+      "keywords": [
+        "car loan",
+        "lease",
+        "novated lease",
+        "car finance"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.car_insurance",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🛡️",
+      "name": "Car insurance (comprehensive)",
+      "keywords": [
+        "car insurance",
+        "comprehensive",
+        "motor insurance"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.compulsory_third_party",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "📋",
+      "name": "Compulsory third-party insurance",
+      "localNames": {
+        "AU": "CTP insurance (green slip)",
+        "DE": "Kfz-Haftpflicht",
+        "IN": "Third-party insurance",
+        "GB": "Third-party car insurance",
+        "JP": "Compulsory insurance (jibaiseki)",
+        "SG": "Third-party motor insurance"
+      },
+      "keywords": [
+        "CTP",
+        "green slip",
+        "third party",
+        "Kfz-Haftpflicht",
+        "jibaiseki"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": [
+          "NZ"
+        ]
+      },
+      "hint": "The minimum insurance the law requires to drive"
+    },
+    {
+      "id": "expense.transport.vehicle_registration",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🪪",
+      "name": "Vehicle registration",
+      "localNames": {
+        "AU": "Car rego",
+        "NZ": "Vehicle licensing (rego)",
+        "US": "DMV registration",
+        "CA": "Registration renewal",
+        "IN": "RC renewal",
+        "AE": "Registration renewal (Mulkiya)",
+        "SG": "COE (certificate of entitlement)"
+      },
+      "keywords": [
+        "rego",
+        "registration",
+        "DMV",
+        "tags",
+        "RC",
+        "licensing",
+        "mulkiya"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Yearly fee to keep a vehicle on the road"
+    },
+    {
+      "id": "expense.transport.vehicle_tax",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🧾",
+      "name": "Vehicle tax",
+      "localNames": {
+        "GB": "Vehicle tax (VED)",
+        "DE": "Kfz-Steuer",
+        "IE": "Motor tax",
+        "IT": "Bollo auto",
+        "SG": "Road tax",
+        "JP": "Automobile tax",
+        "NL": "Motorrijtuigenbelasting",
+        "ES": "IVTM (road tax)"
+      },
+      "keywords": [
+        "vehicle tax",
+        "VED",
+        "road tax",
+        "Kfz-Steuer",
+        "motor tax",
+        "bollo",
+        "IVTM",
+        "automobile tax"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Yearly tax to use a vehicle on public roads"
+    },
+    {
+      "id": "expense.transport.roadworthiness_inspection",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🔍",
+      "name": "Roadworthiness inspection",
+      "localNames": {
+        "GB": "MOT",
+        "DE": "HU (TÜV)",
+        "NZ": "WOF",
+        "IE": "NCT",
+        "FR": "Contrôle technique",
+        "ES": "ITV",
+        "NL": "APK",
+        "IN": "PUC certificate",
+        "JP": "Shaken",
+        "IT": "Revisione",
+        "US": "Vehicle inspection",
+        "CA": "Safety inspection",
+        "AU": "Roadworthy inspection"
+      },
+      "keywords": [
+        "MOT",
+        "TÜV",
+        "HU",
+        "WOF",
+        "NCT",
+        "contrôle technique",
+        "ITV",
+        "APK",
+        "PUC",
+        "shaken",
+        "revisione",
+        "inspection"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Periodic safety or emissions check"
+    },
+    {
+      "id": "expense.transport.servicing",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🔧",
+      "name": "Servicing and repairs",
+      "keywords": [
+        "service",
+        "mechanic",
+        "repairs",
+        "car service"
+      ],
+      "defaultFrequency": "halfYearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.tyres",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🛞",
+      "name": "Tyres",
+      "localNames": {
+        "US": "Tires",
+        "CA": "Tires"
+      },
+      "keywords": [
+        "tyres",
+        "tires",
+        "wheel alignment"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.roadside_assistance",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🆘",
+      "name": "Roadside assistance",
+      "localNames": {
+        "GB": "Breakdown cover",
+        "DE": "Pannenhilfe (ADAC)"
+      },
+      "keywords": [
+        "roadside assistance",
+        "NRMA",
+        "RACV",
+        "RACQ",
+        "AA",
+        "AAA",
+        "CAA",
+        "breakdown cover",
+        "ADAC"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.bike_scooter",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🚲",
+      "name": "Bike or scooter",
+      "localNames": {
+        "IN": "Two-wheeler"
+      },
+      "keywords": [
+        "bike",
+        "bicycle",
+        "scooter",
+        "e-bike",
+        "two-wheeler"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.transport.drivers_licence",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "transport",
+      "emoji": "🪪",
+      "name": "Driver's licence renewal",
+      "localNames": {
+        "US": "Driver's license renewal",
+        "CA": "Driver's licence renewal",
+        "GB": "Driving licence renewal",
+        "IN": "Driving licence renewal"
+      },
+      "keywords": [
+        "driver licence",
+        "driving licence",
+        "license renewal"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.health_insurance",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "🩺",
+      "name": "Health insurance",
+      "localNames": {
+        "IN": "Health insurance (mediclaim)",
+        "AU": "Private health insurance",
+        "DE": "Krankenversicherung"
+      },
+      "keywords": [
+        "health insurance",
+        "private health",
+        "medical insurance",
+        "mediclaim"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.doctor",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "👨‍⚕️",
+      "name": "Doctor and specialist",
+      "keywords": [
+        "doctor",
+        "GP",
+        "specialist",
+        "clinic",
+        "gap fee"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.dental",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "🦷",
+      "name": "Dental",
+      "keywords": [
+        "dentist",
+        "dental",
+        "orthodontist"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.optical",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "👓",
+      "name": "Optical",
+      "keywords": [
+        "optometrist",
+        "glasses",
+        "contact lenses",
+        "eye test"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.pharmacy",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "💊",
+      "name": "Pharmacy",
+      "localNames": {
+        "GB": "Chemist",
+        "US": "Drugstore"
+      },
+      "keywords": [
+        "pharmacy",
+        "chemist",
+        "medicine",
+        "prescription"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.mental_health",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "health",
+      "emoji": "🧠",
+      "name": "Mental health and therapy",
+      "keywords": [
+        "therapy",
+        "psychologist",
+        "counselling",
+        "mental health"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.gym",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "health",
+      "emoji": "🏋️",
+      "name": "Gym and fitness",
+      "keywords": [
+        "gym",
+        "fitness",
+        "yoga",
+        "pilates",
+        "personal trainer"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.health.sport",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "health",
+      "emoji": "⚽",
+      "name": "Sport and clubs",
+      "keywords": [
+        "sport",
+        "club",
+        "team fees",
+        "golf"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.life",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "❤️",
+      "name": "Life insurance",
+      "localNames": {
+        "IN": "Term insurance"
+      },
+      "keywords": [
+        "life insurance",
+        "term insurance",
+        "life cover"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.income_protection",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "💼",
+      "name": "Income protection",
+      "keywords": [
+        "income protection",
+        "disability insurance",
+        "salary continuance"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.travel",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "✈️",
+      "name": "Travel insurance",
+      "keywords": [
+        "travel insurance"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.pet",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "🐾",
+      "name": "Pet insurance",
+      "keywords": [
+        "pet insurance"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.device",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "📱",
+      "name": "Device insurance",
+      "keywords": [
+        "device insurance",
+        "phone insurance",
+        "AppleCare"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.insurance.endowment",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "insurance",
+      "emoji": "🧾",
+      "name": "Endowment or LIC premium",
+      "localNames": {
+        "IN": "LIC premium"
+      },
+      "keywords": [
+        "endowment",
+        "LIC",
+        "premium",
+        "ULIP"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.personal.clothing",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "personal",
+      "emoji": "👕",
+      "name": "Clothing and shoes",
+      "keywords": [
+        "clothes",
+        "clothing",
+        "shoes",
+        "fashion"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.personal.hair_beauty",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "personal",
+      "emoji": "💇",
+      "name": "Haircut and beauty",
+      "keywords": [
+        "haircut",
+        "barber",
+        "salon",
+        "beauty",
+        "nails"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.personal.toiletries",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "personal",
+      "emoji": "🧴",
+      "name": "Toiletries",
+      "keywords": [
+        "toiletries",
+        "skincare",
+        "shampoo",
+        "cosmetics"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.personal.laundry",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "personal",
+      "emoji": "🧺",
+      "name": "Laundry and dry cleaning",
+      "keywords": [
+        "laundry",
+        "dry cleaning",
+        "laundromat"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.personal.gifts_given",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "personal",
+      "emoji": "🎁",
+      "name": "Gifts given",
+      "keywords": [
+        "gifts",
+        "presents",
+        "birthday",
+        "wedding gift"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.childcare",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "🧸",
+      "name": "Childcare or daycare",
+      "localNames": {
+        "GB": "Nursery or childcare",
+        "DE": "Kita"
+      },
+      "keywords": [
+        "childcare",
+        "daycare",
+        "creche",
+        "nursery",
+        "before school care",
+        "Kita"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.school_fees",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "🏫",
+      "name": "School fees",
+      "keywords": [
+        "school fees",
+        "tuition",
+        "term fees"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.school_supplies",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "✏️",
+      "name": "School supplies and uniforms",
+      "keywords": [
+        "school supplies",
+        "uniforms",
+        "stationery",
+        "books"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.extracurricular",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "family",
+      "emoji": "🎨",
+      "name": "Extracurricular activities",
+      "keywords": [
+        "swimming lessons",
+        "music lessons",
+        "dance",
+        "activities",
+        "classes"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.baby_supplies",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "🍼",
+      "name": "Baby supplies",
+      "localNames": {
+        "US": "Diapers and baby supplies",
+        "CA": "Diapers and baby supplies"
+      },
+      "keywords": [
+        "nappies",
+        "diapers",
+        "formula",
+        "baby"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.pocket_money",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "family",
+      "emoji": "🪙",
+      "name": "Pocket money",
+      "localNames": {
+        "US": "Kids' allowance",
+        "CA": "Kids' allowance"
+      },
+      "keywords": [
+        "pocket money",
+        "allowance",
+        "kids money"
+      ],
+      "defaultFrequency": "weekly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.child_support_paid",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "⚖️",
+      "name": "Child support paid",
+      "keywords": [
+        "child support",
+        "maintenance",
+        "alimony"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.family.elder_care",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "family",
+      "emoji": "👴",
+      "name": "Support for parents or elder care",
+      "keywords": [
+        "parents",
+        "elder care",
+        "aged care",
+        "family support"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.education.tuition",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "education",
+      "emoji": "🎓",
+      "name": "Tuition or university fees",
+      "keywords": [
+        "tuition",
+        "university",
+        "college",
+        "semester fees"
+      ],
+      "defaultFrequency": "halfYearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.education.books_courses",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "education",
+      "emoji": "📚",
+      "name": "Books and courses",
+      "keywords": [
+        "books",
+        "courses",
+        "udemy",
+        "coursera",
+        "training"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.education.exam_fees",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "education",
+      "emoji": "📝",
+      "name": "Exam, visa or skills-assessment fees",
+      "keywords": [
+        "exam",
+        "visa",
+        "skills assessment",
+        "IELTS",
+        "certification"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.education.student_loan",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "education",
+      "emoji": "💳",
+      "name": "Student loan repayment",
+      "localNames": {
+        "AU": "HELP repayment",
+        "GB": "Student loan (Plan 1, 2, 4 or 5)",
+        "US": "Federal student loan",
+        "NZ": "Student loan",
+        "CA": "Canada Student Loan",
+        "IN": "Education loan EMI"
+      },
+      "keywords": [
+        "student loan",
+        "HELP",
+        "HECS",
+        "Plan 2",
+        "federal loan",
+        "education loan"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.streaming_video",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🎬",
+      "name": "Streaming video",
+      "keywords": [
+        "streaming",
+        "netflix",
+        "disney",
+        "prime video",
+        "stan",
+        "binge"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.music",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🎵",
+      "name": "Music",
+      "keywords": [
+        "music",
+        "spotify",
+        "apple music",
+        "youtube premium"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.gaming",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🎮",
+      "name": "Gaming",
+      "keywords": [
+        "gaming",
+        "game pass",
+        "playstation plus",
+        "games"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.news",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "📰",
+      "name": "News",
+      "keywords": [
+        "news",
+        "newspaper",
+        "magazine"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.cloud_storage",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "☁️",
+      "name": "Cloud storage",
+      "keywords": [
+        "icloud",
+        "google one",
+        "dropbox",
+        "cloud storage"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.software",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🧰",
+      "name": "Software and apps",
+      "keywords": [
+        "software",
+        "apps",
+        "microsoft 365",
+        "adobe"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.ai_assistants",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🤖",
+      "name": "AI assistants",
+      "keywords": [
+        "AI",
+        "ChatGPT",
+        "Claude",
+        "assistant"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.shopping_memberships",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "📦",
+      "name": "Shopping memberships",
+      "keywords": [
+        "amazon prime",
+        "costco",
+        "membership"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.events",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🎟️",
+      "name": "Events and concerts",
+      "keywords": [
+        "events",
+        "concerts",
+        "tickets",
+        "festival",
+        "cinema"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.subscriptions.hobbies",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "subscriptions",
+      "emoji": "🎨",
+      "name": "Hobbies",
+      "keywords": [
+        "hobbies",
+        "crafts",
+        "games",
+        "collecting"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.pets.food",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "pets",
+      "emoji": "🐶",
+      "name": "Pet food",
+      "keywords": [
+        "pet food",
+        "dog food",
+        "cat food"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.pets.vet",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "pets",
+      "emoji": "🏥",
+      "name": "Vet",
+      "keywords": [
+        "vet",
+        "veterinary",
+        "vaccinations"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.pets.grooming_boarding",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "pets",
+      "emoji": "✂️",
+      "name": "Grooming and boarding",
+      "keywords": [
+        "grooming",
+        "boarding",
+        "kennel",
+        "pet sitter"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.travel.flights",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "travel",
+      "emoji": "✈️",
+      "name": "Flights",
+      "keywords": [
+        "flights",
+        "airfare",
+        "airline"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.travel.accommodation",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "travel",
+      "emoji": "🏨",
+      "name": "Accommodation",
+      "keywords": [
+        "hotel",
+        "accommodation",
+        "airbnb",
+        "hostel"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.travel.visa_passport",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "travel",
+      "emoji": "🛂",
+      "name": "Visa and passport",
+      "keywords": [
+        "visa",
+        "passport",
+        "ESTA",
+        "OCI"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.travel.holiday_spending",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "travel",
+      "emoji": "🧳",
+      "name": "Holiday spending",
+      "localNames": {
+        "US": "Vacation spending",
+        "CA": "Vacation spending"
+      },
+      "keywords": [
+        "holiday",
+        "vacation",
+        "trip",
+        "spending money"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.bank_fees",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "🏦",
+      "name": "Bank fees",
+      "keywords": [
+        "bank fees",
+        "account fee",
+        "ATM fee"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.credit_card_interest",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "💳",
+      "name": "Credit card interest",
+      "keywords": [
+        "credit card interest",
+        "annual fee",
+        "card fees"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.personal_loan",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "💸",
+      "name": "Personal loan repayment",
+      "localNames": {
+        "IN": "Personal loan EMI"
+      },
+      "keywords": [
+        "personal loan",
+        "loan repayment",
+        "EMI"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.bnpl",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "🧾",
+      "name": "Buy now, pay later",
+      "keywords": [
+        "afterpay",
+        "zip",
+        "klarna",
+        "BNPL",
+        "pay later"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.accountant",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "🧮",
+      "name": "Accountant or tax agent",
+      "localNames": {
+        "IN": "Chartered accountant (ITR filing)"
+      },
+      "keywords": [
+        "accountant",
+        "tax agent",
+        "CA",
+        "tax return",
+        "bookkeeper"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.income_tax",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "🏛️",
+      "name": "Income tax payment",
+      "localNames": {
+        "AU": "Tax bill or PAYG instalment",
+        "GB": "Self Assessment payment",
+        "US": "Estimated tax payment",
+        "IN": "Advance tax"
+      },
+      "keywords": [
+        "income tax",
+        "tax bill",
+        "PAYG instalment",
+        "self assessment",
+        "advance tax",
+        "estimated tax"
+      ],
+      "defaultFrequency": "quarterly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.brokerage_fees",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "📈",
+      "name": "Brokerage and platform fees",
+      "keywords": [
+        "brokerage",
+        "platform fee",
+        "trading fee",
+        "account fee"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.fx_fees",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "💱",
+      "name": "FX and transfer fees",
+      "keywords": [
+        "FX",
+        "foreign exchange",
+        "wise",
+        "remittance fee"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.financial.remittance",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "financial",
+      "emoji": "🌏",
+      "name": "Money sent to family abroad",
+      "keywords": [
+        "remittance",
+        "money transfer",
+        "family abroad",
+        "send money home"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.giving.charity",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "giving",
+      "emoji": "💝",
+      "name": "Charity",
+      "keywords": [
+        "charity",
+        "donation",
+        "non-profit"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.giving.religious",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "giving",
+      "emoji": "🛐",
+      "name": "Religious giving (tithe, zakat, temple or church)",
+      "keywords": [
+        "tithe",
+        "zakat",
+        "temple",
+        "church",
+        "mosque",
+        "gurdwara",
+        "offering"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.giving.festivals",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "giving",
+      "emoji": "🎉",
+      "name": "Festivals and celebrations",
+      "keywords": [
+        "festival",
+        "diwali",
+        "christmas",
+        "eid",
+        "lunar new year",
+        "celebration"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.work.equipment",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "work",
+      "emoji": "💻",
+      "name": "Work equipment",
+      "keywords": [
+        "laptop",
+        "work equipment",
+        "tools",
+        "home office"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.work.memberships",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "work",
+      "emoji": "🪪",
+      "name": "Professional memberships and licences",
+      "keywords": [
+        "professional membership",
+        "licence",
+        "registration",
+        "CPD"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.work.union",
+      "kind": "expense",
+      "group": "needs",
+      "parent": "work",
+      "emoji": "🤝",
+      "name": "Union fees",
+      "localNames": {
+        "US": "Union dues"
+      },
+      "keywords": [
+        "union",
+        "union fees",
+        "dues"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.system.miscellaneous",
+      "kind": "expense",
+      "group": "wants",
+      "parent": "system",
+      "emoji": "🧩",
+      "name": "Miscellaneous",
+      "keywords": [
+        "misc",
+        "other",
+        "sundry"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "expense.system.unrecorded_spending",
+      "kind": "expense",
+      "group": "other",
+      "parent": "system",
+      "emoji": "❓",
+      "name": "Unrecorded spending",
+      "keywords": [
+        "unrecorded",
+        "adjustment",
+        "check-in"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Created by balance check-ins when money left an account without a record",
+      "system": true
+    },
+    {
+      "id": "income.other.unrecorded_income",
+      "kind": "income",
+      "group": "income",
+      "parent": "other",
+      "emoji": "❔",
+      "name": "Unrecorded income",
+      "keywords": [
+        "unrecorded",
+        "adjustment",
+        "check-in"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "hint": "Created by balance check-ins when money arrived without a record",
+      "system": true
+    },
+    {
+      "id": "saving.savings.emergency_fund",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🆘",
+      "name": "Emergency fund",
+      "keywords": [
+        "emergency",
+        "rainy day",
+        "safety net"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.float",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🧾",
+      "name": "Float or buffer",
+      "keywords": [
+        "float",
+        "buffer",
+        "bills buffer"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.goal",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🎯",
+      "name": "Goal savings",
+      "keywords": [
+        "goal",
+        "saving for",
+        "target"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.holiday_fund",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏖️",
+      "name": "Holiday fund",
+      "localNames": {
+        "US": "Vacation fund",
+        "CA": "Vacation fund"
+      },
+      "keywords": [
+        "holiday",
+        "vacation",
+        "travel fund"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.house_deposit",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏠",
+      "name": "House deposit",
+      "localNames": {
+        "US": "Down payment",
+        "CA": "Down payment",
+        "IN": "Home down payment"
+      },
+      "keywords": [
+        "house deposit",
+        "down payment",
+        "first home"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.high_interest",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "💰",
+      "name": "High-interest savings",
+      "localNames": {
+        "GB": "Easy-access savings",
+        "CA": "High-interest savings (HISA)",
+        "US": "High-yield savings (HYSA)"
+      },
+      "keywords": [
+        "high interest",
+        "HISA",
+        "savings account",
+        "bonus saver"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.term_deposit",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏦",
+      "name": "Term deposit (FD, CD, GIC)",
+      "localNames": {
+        "AU": "Term deposit",
+        "NZ": "Term deposit",
+        "IN": "Fixed deposit (FD)",
+        "US": "Certificate of deposit (CD)",
+        "CA": "GIC",
+        "GB": "Fixed-rate bond",
+        "DE": "Festgeld"
+      },
+      "keywords": [
+        "term deposit",
+        "fixed deposit",
+        "FD",
+        "CD",
+        "GIC"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.fhss",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏠",
+      "name": "First Home Super Saver",
+      "keywords": [
+        "FHSS",
+        "first home",
+        "super saver"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.offset",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏡",
+      "name": "Offset account",
+      "keywords": [
+        "offset",
+        "mortgage offset"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.cash_isa",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "💷",
+      "name": "Cash ISA",
+      "keywords": [
+        "cash ISA",
+        "ISA"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.lifetime_isa",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏠",
+      "name": "Lifetime ISA",
+      "keywords": [
+        "LISA",
+        "lifetime ISA",
+        "first home"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.premium_bonds",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🎟️",
+      "name": "Premium Bonds",
+      "keywords": [
+        "premium bonds",
+        "NS&I"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.state_savings",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏛️",
+      "name": "State Savings",
+      "keywords": [
+        "state savings",
+        "An Post"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.prize_bonds",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🎟️",
+      "name": "Prize Bonds",
+      "keywords": [
+        "prize bonds"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.treasury_bills",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏛️",
+      "name": "Treasury bills",
+      "keywords": [
+        "T-bills",
+        "treasury bills"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.i_bonds",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "📜",
+      "name": "I bonds",
+      "keywords": [
+        "I bonds",
+        "series I",
+        "treasury direct"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.hsa",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🩺",
+      "name": "HSA",
+      "keywords": [
+        "HSA",
+        "health savings account"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.fhsa",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏠",
+      "name": "FHSA",
+      "keywords": [
+        "FHSA",
+        "first home savings account"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "CA"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.resp",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🎓",
+      "name": "RESP",
+      "keywords": [
+        "RESP",
+        "education savings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "CA"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.ppf",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏛️",
+      "name": "PPF",
+      "keywords": [
+        "PPF",
+        "public provident fund"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.sukanya_samriddhi",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "👧",
+      "name": "Sukanya Samriddhi",
+      "keywords": [
+        "sukanya samriddhi",
+        "SSY",
+        "girl child"
+      ],
+      "defaultFrequency": "yearly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.rd",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏦",
+      "name": "Recurring deposit (RD)",
+      "keywords": [
+        "RD",
+        "recurring deposit"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.tagesgeld",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "💶",
+      "name": "Tagesgeld",
+      "keywords": [
+        "Tagesgeld",
+        "call money",
+        "instant access"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.bausparvertrag",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "🏠",
+      "name": "Bausparvertrag",
+      "keywords": [
+        "Bausparvertrag",
+        "building savings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.livret_a",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "💶",
+      "name": "Livret A",
+      "keywords": [
+        "Livret A",
+        "livret"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "saving.savings.ldds",
+      "kind": "saving",
+      "group": "savings",
+      "parent": "savings",
+      "emoji": "💶",
+      "name": "LDDS",
+      "keywords": [
+        "LDDS",
+        "livret développement durable"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.etfs",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "📈",
+      "name": "ETFs",
+      "keywords": [
+        "ETF",
+        "index fund",
+        "DCA",
+        "auto-invest"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.shares",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "📊",
+      "name": "Shares",
+      "localNames": {
+        "US": "Stocks",
+        "CA": "Stocks",
+        "IN": "Stocks (equity)"
+      },
+      "keywords": [
+        "shares",
+        "stocks",
+        "equities"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.managed_funds",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🧺",
+      "name": "Mutual or managed funds",
+      "localNames": {
+        "IN": "Mutual funds",
+        "US": "Mutual funds",
+        "AU": "Managed funds",
+        "GB": "Unit trusts and OEICs"
+      },
+      "keywords": [
+        "mutual fund",
+        "managed fund",
+        "unit trust",
+        "index fund"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.crypto",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🪙",
+      "name": "Crypto",
+      "keywords": [
+        "crypto",
+        "bitcoin",
+        "ethereum"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.gold",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🥇",
+      "name": "Gold and bullion",
+      "keywords": [
+        "gold",
+        "silver",
+        "bullion"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.sip",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🔁",
+      "name": "SIP",
+      "keywords": [
+        "SIP",
+        "systematic investment plan"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.elss",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🧾",
+      "name": "ELSS",
+      "keywords": [
+        "ELSS",
+        "tax saver fund"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.sgb",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🥇",
+      "name": "Sovereign Gold Bonds",
+      "keywords": [
+        "SGB",
+        "sovereign gold bond"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.digital_gold",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🪙",
+      "name": "Digital gold",
+      "keywords": [
+        "digital gold"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.stocks_shares_isa",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "📈",
+      "name": "Stocks and Shares ISA",
+      "keywords": [
+        "ISA",
+        "stocks and shares"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.junior_isa",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🧒",
+      "name": "Junior ISA",
+      "keywords": [
+        "JISA",
+        "junior ISA"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.pie_funds",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🥝",
+      "name": "PIE funds",
+      "keywords": [
+        "PIE",
+        "portfolio investment entity"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "NZ"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.tfsa",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🍁",
+      "name": "TFSA",
+      "keywords": [
+        "TFSA",
+        "tax-free savings account"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "CA"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.plan_529",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🎓",
+      "name": "529 plan",
+      "keywords": [
+        "529",
+        "college savings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.etf_sparplan",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "📈",
+      "name": "ETF-Sparplan",
+      "keywords": [
+        "Sparplan",
+        "ETF-Sparplan"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.pea",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "📈",
+      "name": "PEA",
+      "keywords": [
+        "PEA",
+        "plan d'épargne en actions"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.assurance_vie",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🛡️",
+      "name": "Assurance vie",
+      "keywords": [
+        "assurance vie",
+        "life insurance savings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.investing.nisa",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "investing",
+      "emoji": "🌸",
+      "name": "NISA",
+      "keywords": [
+        "NISA",
+        "tsumitate"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "JP"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.contribution",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Retirement contribution",
+      "localNames": {
+        "AU": "Super contribution",
+        "NZ": "KiwiSaver contribution",
+        "GB": "Pension contribution",
+        "IE": "Pension contribution",
+        "US": "Retirement contribution",
+        "CA": "RRSP contribution",
+        "IN": "NPS contribution",
+        "DE": "Altersvorsorge",
+        "JP": "iDeCo contribution"
+      },
+      "keywords": [
+        "retirement",
+        "pension",
+        "super",
+        "401k"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.super_salary_sacrifice",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Super (salary sacrifice)",
+      "keywords": [
+        "super",
+        "salary sacrifice",
+        "concessional"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.super_voluntary",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Super (voluntary contribution)",
+      "keywords": [
+        "super",
+        "voluntary",
+        "non-concessional",
+        "after-tax"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.kiwisaver",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🥝",
+      "name": "KiwiSaver",
+      "keywords": [
+        "KiwiSaver"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "NZ"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.sipp",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "SIPP",
+      "keywords": [
+        "SIPP",
+        "self-invested personal pension"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.prsa",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "PRSA",
+      "keywords": [
+        "PRSA",
+        "personal retirement savings account"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.k401",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "401(k)",
+      "keywords": [
+        "401k",
+        "401(k)",
+        "employer plan"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.b403",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "403(b)",
+      "keywords": [
+        "403b",
+        "403(b)"
+      ],
+      "defaultFrequency": "fortnightly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.traditional_ira",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Traditional IRA",
+      "keywords": [
+        "IRA",
+        "traditional IRA"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.roth_ira",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Roth IRA",
+      "keywords": [
+        "Roth",
+        "Roth IRA"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "US"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.rrsp",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🍁",
+      "name": "RRSP",
+      "keywords": [
+        "RRSP",
+        "registered retirement savings plan"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "CA"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.epf",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🏛️",
+      "name": "EPF",
+      "keywords": [
+        "EPF",
+        "provident fund",
+        "PF"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.vpf",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🏛️",
+      "name": "VPF",
+      "keywords": [
+        "VPF",
+        "voluntary provident fund"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.nps",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "NPS",
+      "keywords": [
+        "NPS",
+        "national pension system"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.riester",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Riester-Rente",
+      "keywords": [
+        "Riester"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.ruerup",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "Rürup-Rente",
+      "keywords": [
+        "Rürup",
+        "Basisrente"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.bav",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "bAV (Betriebsrente)",
+      "keywords": [
+        "bAV",
+        "Betriebsrente",
+        "company pension"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "DE"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.per",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "PER",
+      "keywords": [
+        "PER",
+        "plan d'épargne retraite"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.cpf_topup",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "CPF top-up",
+      "keywords": [
+        "CPF",
+        "top-up",
+        "RSTU"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "SG"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.srs",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "SRS",
+      "keywords": [
+        "SRS",
+        "supplementary retirement scheme"
+      ],
+      "defaultFrequency": "once",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "SG"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "investing.retirement.ideco",
+      "kind": "investing",
+      "group": "investing",
+      "parent": "retirement",
+      "emoji": "🧓",
+      "name": "iDeCo",
+      "keywords": [
+        "iDeCo"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [
+          "JP"
+        ],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.between_accounts",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "🔁",
+      "name": "Transfer between accounts",
+      "keywords": [
+        "transfer",
+        "move money",
+        "between accounts"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.to_member",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "🤝",
+      "name": "Transfer to household member",
+      "keywords": [
+        "transfer",
+        "pay back",
+        "send to partner"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.returned_to_member",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "↩️",
+      "name": "Returned to household member",
+      "keywords": [
+        "returned",
+        "paid back",
+        "settle up"
+      ],
+      "defaultFrequency": null,
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.credit_card_payment",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "💳",
+      "name": "Credit card payment",
+      "keywords": [
+        "credit card",
+        "card payment",
+        "pay off card"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.cash_withdrawal",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "🏧",
+      "name": "Cash withdrawal",
+      "keywords": [
+        "cash",
+        "ATM",
+        "withdrawal"
+      ],
+      "defaultFrequency": null,
+      "isVariable": true,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    },
+    {
+      "id": "transfer.transfers.to_savings",
+      "kind": "transfer",
+      "group": "transfer",
+      "parent": "transfers",
+      "emoji": "🐷",
+      "name": "Move to savings",
+      "keywords": [
+        "savings",
+        "save",
+        "move to savings"
+      ],
+      "defaultFrequency": "monthly",
+      "isVariable": false,
+      "countries": {
+        "include": [],
+        "exclude": []
+      }
+    }
+  ]
+}

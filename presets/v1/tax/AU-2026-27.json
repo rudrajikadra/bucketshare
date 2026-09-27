@@ -1,0 +1,155 @@
+{
+  "id": "AU-2026-27",
+  "country": "AU",
+  "name": "Australia 2026–27",
+  "currency": "AUD",
+  "from": "2026-07-01",
+  "to": "2027-06-30",
+  "source": "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+  "sources": [
+    "https://www.ato.gov.au/tax-rates-and-codes/tax-rates-australian-residents",
+    "https://www.ato.gov.au/individuals-and-families/medicare-and-private-health-insurance/medicare-levy/medicare-levy-reduction/medicare-levy-reduction-for-low-income-earners",
+    "https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/tax-offsets/low-and-middle-income-earner-tax-offsets",
+    "https://www.ato.gov.au/tax-rates-and-codes/study-and-training-support-loans-rates-and-repayment-thresholds"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "Medicare levy low-income threshold: the ATO hasn't published 2026–27 figures yet, so the 2025–26 threshold ($28,011) is used"
+  ],
+  "notes": [
+    "Resident individual, full year. Taxable income is gross minus deductions the user enters.",
+    "Medicare levy surcharge, family thresholds and SAPTO are not modelled."
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0"
+    },
+    {
+      "over": "18200",
+      "rate": "0.15"
+    },
+    {
+      "over": "45000",
+      "rate": "0.30"
+    },
+    {
+      "over": "135000",
+      "rate": "0.37"
+    },
+    {
+      "over": "190000",
+      "rate": "0.45"
+    }
+  ],
+  "offsets": [
+    {
+      "name": "Low income tax offset",
+      "points": [
+        {
+          "income": "0",
+          "amount": "700"
+        },
+        {
+          "income": "37500",
+          "amount": "700"
+        },
+        {
+          "income": "45000",
+          "amount": "325"
+        },
+        {
+          "income": "66667",
+          "amount": "0"
+        }
+      ]
+    }
+  ],
+  "levies": [
+    {
+      "name": "Medicare levy",
+      "base": "taxable",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.02"
+        }
+      ],
+      "exemptAtOrBelow": "28011",
+      "shadeInRate": "0.10",
+      "note": "Single, not entitled to SAPTO: nil at or below the lower threshold, then 10c per $1 above it until 2% applies"
+    }
+  ],
+  "studentLoans": [
+    {
+      "name": "HELP",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "69528",
+          "rate": "0.15"
+        },
+        {
+          "over": "129717",
+          "rate": "0.17",
+          "baseAmount": "9028"
+        },
+        {
+          "over": "186050",
+          "rate": "0.10",
+          "appliesTo": "total"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "gross": "45000",
+      "incomeTax": "3695.00",
+      "levies": "900.00",
+      "socialContributions": "0.00",
+      "net": "40405.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "90000",
+      "incomeTax": "17520.00",
+      "levies": "1800.00",
+      "socialContributions": "0.00",
+      "net": "70680.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "200000",
+      "incomeTax": "55870.00",
+      "levies": "4000.00",
+      "socialContributions": "0.00",
+      "net": "140130.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ],
+  "studentLoanSamples": [
+    {
+      "plan": "HELP",
+      "income": "86380",
+      "repayment": "2527.80",
+      "checkedWith": "ATO example 1 (Christina): $2,527.80"
+    },
+    {
+      "plan": "HELP",
+      "income": "137064",
+      "repayment": "10276.99",
+      "checkedWith": "ATO example 2 (Barry): $10,276.99"
+    },
+    {
+      "plan": "HELP",
+      "income": "254780",
+      "repayment": "25478.00",
+      "checkedWith": "ATO example 3 (Priya): $25,478"
+    }
+  ]
+}

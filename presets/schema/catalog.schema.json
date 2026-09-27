@@ -1,0 +1,174 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BucketShare category presets",
+  "type": "object",
+  "required": [
+    "version",
+    "parents",
+    "presets"
+  ],
+  "properties": {
+    "version": {
+      "type": "integer"
+    },
+    "parents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "key",
+          "kind",
+          "name",
+          "emoji"
+        ],
+        "properties": {
+          "key": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "kind": {
+            "enum": [
+              "income",
+              "expense",
+              "saving",
+              "investing",
+              "transfer"
+            ]
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "emoji": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "group": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "presets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "kind",
+          "group",
+          "parent",
+          "emoji",
+          "name",
+          "keywords",
+          "isVariable",
+          "countries"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^(income|expense|saving|investing|transfer)\\.[a-z0-9_]+\\.[a-z0-9_]+$"
+          },
+          "kind": {
+            "enum": [
+              "income",
+              "expense",
+              "saving",
+              "investing",
+              "transfer"
+            ]
+          },
+          "group": {
+            "enum": [
+              "needs",
+              "wants",
+              "savings",
+              "investing",
+              "income",
+              "transfer",
+              "other"
+            ]
+          },
+          "parent": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "emoji": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 16
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "localNames": {
+            "type": "object",
+            "propertyNames": {
+              "pattern": "^[A-Z]{2}$"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "defaultFrequency": {
+            "enum": [
+              "once",
+              "weekly",
+              "fortnightly",
+              "monthly",
+              "quarterly",
+              "halfYearly",
+              "yearly",
+              null
+            ]
+          },
+          "isVariable": {
+            "type": "boolean"
+          },
+          "countries": {
+            "type": "object",
+            "properties": {
+              "include": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^([A-Z]{2}|INTL)$"
+                }
+              },
+              "exclude": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "pattern": "^([A-Z]{2}|INTL)$"
+                }
+              }
+            },
+            "required": [
+              "include",
+              "exclude"
+            ]
+          },
+          "hint": {
+            "type": "string"
+          },
+          "deprecated": {
+            "type": "boolean"
+          },
+          "system": {
+            "type": "boolean"
+          }
+        }
+      }
+    }
+  }
+}

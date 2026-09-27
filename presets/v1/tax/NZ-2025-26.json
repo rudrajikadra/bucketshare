@@ -1,0 +1,118 @@
+{
+  "id": "NZ-2025-26",
+  "country": "NZ",
+  "name": "New Zealand 2025–26",
+  "currency": "NZD",
+  "from": "2025-04-01",
+  "to": "2026-03-31",
+  "source": "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+  "sources": [
+    "https://www.ird.govt.nz/income-tax/income-tax-for-individuals/tax-codes-and-tax-rates-for-individuals/tax-rates-for-individuals",
+    "https://www.mbie.govt.nz/business-and-employment/employment-and-skills/employment-legislation-reviews/setting-the-average-acc-levy-rates-for-2025-26-2026-27-and-2027-28",
+    "https://www.ird.govt.nz/student-loans/living-in-new-zealand-with-a-student-loan/repaying-my-student-loan-when-i-earn-salary-or-wages"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "ACC earners' levy rate 1.67% and maximum liable earnings $152,790: taken from MBIE's levy decision as reported by payroll sources; ird.govt.nz didn't render"
+  ],
+  "notes": [
+    "Tax year runs 1 April to 31 March. The independent earner tax credit (IETC) depends on benefits and isn't modelled."
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0.105"
+    },
+    {
+      "over": "15600",
+      "rate": "0.175"
+    },
+    {
+      "over": "53500",
+      "rate": "0.30"
+    },
+    {
+      "over": "78100",
+      "rate": "0.33"
+    },
+    {
+      "over": "180000",
+      "rate": "0.39"
+    }
+  ],
+  "levies": [
+    {
+      "name": "ACC earners' levy",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.0167"
+        }
+      ],
+      "ceiling": "152790"
+    }
+  ],
+  "studentLoans": [
+    {
+      "name": "Student loan",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "24128",
+          "rate": "0.12"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "gross": "40000",
+      "incomeTax": "5908.00",
+      "levies": "668.00",
+      "socialContributions": "0.00",
+      "net": "33424.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "80000",
+      "incomeTax": "16277.50",
+      "levies": "1336.00",
+      "socialContributions": "0.00",
+      "net": "62386.50",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "200000",
+      "incomeTax": "57077.50",
+      "levies": "2551.59",
+      "socialContributions": "0.00",
+      "net": "140370.91",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ],
+  "studentLoanSamples": [
+    {
+      "plan": "Student loan",
+      "income": "50000",
+      "repayment": "3104.64",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "plan": "Student loan",
+      "income": "24128",
+      "repayment": "0.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "plan": "Student loan",
+      "income": "80000",
+      "repayment": "6704.64",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "version": 1,
+  "schemaVersion": 1,
+  "minAppVersion": "1.0",
+  "files": [
+    {
+      "path": "catalog.json",
+      "sha256": "66f3eae740b8fdb672b313869cb10bce75eab3d5b9a0112a95fe735c5f87ef2b",
+      "bytes": 108519
+    },
+    {
+      "path": "countries.json",
+      "sha256": "fb2b84394ca77cd81341164efc74a73ea3b48cfb76205dcf96722fb490645136",
+      "bytes": 26017
+    },
+    {
+      "path": "subscriptions.json",
+      "sha256": "38af62802d1439ea2742a9df6d6b23d53ca91f0e76358b0068d1f64e0471e091",
+      "bytes": 9278
+    },
+    {
+      "path": "tax/AU-2025-26.json",
+      "sha256": "1229b1cec136c4c27ad2a6eed84723885f7ce7e5354293cf5b19e3ed0766bb66",
+      "bytes": 4005
+    },
+    {
+      "path": "tax/AU-2026-27.json",
+      "sha256": "d7cf854a74c87590e6ba47c1a119b80839975e0fd598209c91786e567bec4a44",
+      "bytes": 3835
+    },
+    {
+      "path": "tax/CA-2025.json",
+      "sha256": "689be0ba0323e5081b5ec5ed2a0d68adeae0800712275099d694eb5b1b445ada",
+      "bytes": 3137
+    },
+    {
+      "path": "tax/CA-2026.json",
+      "sha256": "c63c3b74eef7506d4858ce5dd2d97e63ae0ca7c8fa7da1471e189a0734a745b4",
+      "bytes": 3071
+    },
+    {
+      "path": "tax/DE-2025.json",
+      "sha256": "2e3fade2e3baa92c3f7f278cfa81bba9509073a94a0524b065187ced457a6286",
+      "bytes": 3734
+    },
+    {
+      "path": "tax/DE-2026.json",
+      "sha256": "c3f68f88ba9688e52bcc10221288f8471178f2b73d22bf1c1e019ba1578b5bad",
+      "bytes": 3597
+    },
+    {
+      "path": "tax/GB-2025-26.json",
+      "sha256": "ebfe92622815886ec740a482e037d9b25c4ef6594316fa7118b82f73615c0a56",
+      "bytes": 3661
+    },
+    {
+      "path": "tax/GB-2026-27.json",
+      "sha256": "11e0f95fd3f187633b4cb3e02bd568d8115f391791d4c1e98c7802d2a5761714",
+      "bytes": 3860
+    },
+    {
+      "path": "tax/GB-SCT-2025-26.json",
+      "sha256": "fe4b1d6e8eb2488e62972c4213870f832b7e7425a6b0fdac89355759749c2843",
+      "bytes": 3402
+    },
+    {
+      "path": "tax/GB-SCT-2026-27.json",
+      "sha256": "0b5bfbdd638d2af4f811ea4d2cefc5f3b025d786bdfe6fc122bf9ef2c655068e",
+      "bytes": 3558
+    },
+    {
+      "path": "tax/IE-2025.json",
+      "sha256": "ad6b34ba78a6fb638965620aab3226925d9f22f9b1235a559a55f906a899a193",
+      "bytes": 2746
+    },
+    {
+      "path": "tax/IE-2026.json",
+      "sha256": "81d1a8778f1033287658cd39f4f4a7354ebc65f7c8d075438881baa161a0ebf8",
+      "bytes": 2749
+    },
+    {
+      "path": "tax/IN-2025-26-OLD.json",
+      "sha256": "b97ea65b18d23a1e33a38478a3fe6d533e8c165f750ed8d91666b91c877d6c3b",
+      "bytes": 2397
+    },
+    {
+      "path": "tax/IN-2025-26.json",
+      "sha256": "c1d45d42cd46cb6bd127494d0030c12cd9447a853c9ada9fa8fe05191ba093a1",
+      "bytes": 2839
+    },
+    {
+      "path": "tax/IN-2026-27-OLD.json",
+      "sha256": "09f0237d561f8238c763ec2050959e7619316c9394d746a07a473dabe0f4b64e",
+      "bytes": 2397
+    },
+    {
+      "path": "tax/IN-2026-27.json",
+      "sha256": "16684a78485a28b251ce9dfd77b0e7c993c59bbf2a18f3c83897e5b2fe35005c",
+      "bytes": 2839
+    },
+    {
+      "path": "tax/NZ-2025-26.json",
+      "sha256": "71d5a20c761184284df35f6d3ee0942a17790032c58e6b7a666271a91d4da541",
+      "bytes": 3087
+    },
+    {
+      "path": "tax/NZ-2026-27.json",
+      "sha256": "0c01731967abc3e4791a2ac6ed3e32467765cbde307064daa42ae70c6d4c5247",
+      "bytes": 3087
+    },
+    {
+      "path": "tax/US-2025.json",
+      "sha256": "3584f1af4cfcf4265e6832f763d06e252460eb7dcf366b2c788643584051491a",
+      "bytes": 2523
+    },
+    {
+      "path": "tax/US-2026.json",
+      "sha256": "e3665c2f320a4e1d94aaaec3257ff6e495934496eb20ff52f7f0915e29e37f33",
+      "bytes": 2629
+    }
+  ],
+  "updatedAt": "2026-09-27T03:18:55Z"
+}

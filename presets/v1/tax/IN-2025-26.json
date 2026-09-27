@@ -1,0 +1,123 @@
+{
+  "id": "IN-2025-26",
+  "country": "IN",
+  "name": "India FY 2025–26 (new regime)",
+  "variant": "New regime",
+  "isDefault": true,
+  "currency": "INR",
+  "from": "2025-04-01",
+  "to": "2026-03-31",
+  "source": "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1",
+  "sources": [
+    "https://www.incometax.gov.in/iec/foportal/help/individual/return-applicable-1",
+    "https://www.indiabudget.gov.in/"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "Slabs, rebate and cess checked against Budget 2025 and Budget 2026 coverage (no change for FY 2026-27); incometax.gov.in pages didn't render for a direct check"
+  ],
+  "notes": [
+    "Resident individual under 60, salaried: ₹75,000 standard deduction. Rebate u/s 87A makes tax nil up to ₹12 lakh taxable, with marginal relief just above.",
+    "Surcharge marginal relief isn't modelled."
+  ],
+  "deductions": [
+    {
+      "name": "Standard deduction",
+      "amount": "75000"
+    }
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0"
+    },
+    {
+      "over": "400000",
+      "rate": "0.05"
+    },
+    {
+      "over": "800000",
+      "rate": "0.10"
+    },
+    {
+      "over": "1200000",
+      "rate": "0.15"
+    },
+    {
+      "over": "1600000",
+      "rate": "0.20"
+    },
+    {
+      "over": "2000000",
+      "rate": "0.25"
+    },
+    {
+      "over": "2400000",
+      "rate": "0.30"
+    }
+  ],
+  "rebate": {
+    "name": "Rebate u/s 87A",
+    "maxIncome": "1200000",
+    "maxAmount": "60000",
+    "marginalRelief": true
+  },
+  "surcharge": {
+    "name": "Surcharge",
+    "bands": [
+      {
+        "over": "5000000",
+        "rate": "0.10"
+      },
+      {
+        "over": "10000000",
+        "rate": "0.15"
+      },
+      {
+        "over": "20000000",
+        "rate": "0.25"
+      }
+    ]
+  },
+  "taxSurcharges": [
+    {
+      "name": "Health and education cess",
+      "rate": "0.04"
+    }
+  ],
+  "samples": [
+    {
+      "gross": "1000000",
+      "incomeTax": "0.00",
+      "levies": "0.00",
+      "socialContributions": "0.00",
+      "net": "1000000.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "1275000",
+      "incomeTax": "0.00",
+      "levies": "0.00",
+      "socialContributions": "0.00",
+      "net": "1275000.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "1300000",
+      "incomeTax": "26000.00",
+      "levies": "0.00",
+      "socialContributions": "0.00",
+      "net": "1274000.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "2500000",
+      "incomeTax": "319800.00",
+      "levies": "0.00",
+      "socialContributions": "0.00",
+      "net": "2180200.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

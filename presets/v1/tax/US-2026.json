@@ -1,0 +1,112 @@
+{
+  "id": "US-2026",
+  "country": "US",
+  "name": "United States 2026 (federal, single)",
+  "variant": "Single",
+  "isDefault": true,
+  "currency": "USD",
+  "from": "2026-01-01",
+  "to": "2026-12-31",
+  "source": "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+  "sources": [
+    "https://www.irs.gov/newsroom/irs-releases-tax-inflation-adjustments-for-tax-year-2026-including-amendments-from-the-one-big-beautiful-bill",
+    "https://www.irs.gov/filing/federal-income-tax-rates-and-brackets",
+    "https://www.ssa.gov/oact/cola/cbb.html",
+    "https://www.irs.gov/taxtopics/tc560"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": true,
+  "notes": [
+    "Federal income tax for a single filer with the standard deduction, plus employee FICA. State and local tax use the manual % in the app.",
+    "Additional Medicare tax of 0.9% applies above $200,000 of wages (single)."
+  ],
+  "deductions": [
+    {
+      "name": "Standard deduction",
+      "amount": "16100"
+    }
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0.10"
+    },
+    {
+      "over": "12400",
+      "rate": "0.12"
+    },
+    {
+      "over": "50400",
+      "rate": "0.22"
+    },
+    {
+      "over": "105700",
+      "rate": "0.24"
+    },
+    {
+      "over": "201775",
+      "rate": "0.32"
+    },
+    {
+      "over": "256225",
+      "rate": "0.35"
+    },
+    {
+      "over": "640600",
+      "rate": "0.37"
+    }
+  ],
+  "socialContributions": [
+    {
+      "name": "Social Security",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.062"
+        }
+      ],
+      "ceiling": "184500"
+    },
+    {
+      "name": "Medicare",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.0145"
+        },
+        {
+          "over": "200000",
+          "rate": "0.0235"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "gross": "40000",
+      "incomeTax": "2620.00",
+      "levies": "0.00",
+      "socialContributions": "3060.00",
+      "net": "34320.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "100000",
+      "incomeTax": "13170.00",
+      "levies": "0.00",
+      "socialContributions": "7650.00",
+      "net": "79180.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "300000",
+      "incomeTax": "68134.25",
+      "levies": "0.00",
+      "socialContributions": "16689.00",
+      "net": "215176.75",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

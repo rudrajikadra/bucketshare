@@ -1,0 +1,147 @@
+{
+  "id": "DE-2026",
+  "country": "DE",
+  "name": "Germany 2026 (simplified)",
+  "currency": "EUR",
+  "from": "2026-01-01",
+  "to": "2026-12-31",
+  "source": "https://www.gesetze-im-internet.de/estg/__32a.html",
+  "sources": [
+    "https://www.gesetze-im-internet.de/estg/__32a.html",
+    "https://www.bmf-steuerrechner.de/"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "Employee social contribution rates and ceilings (pension and unemployment to €101,400, health 8.75% incl. half the average additional rate and care 1.8% to €69,750): from the published 2026 values as reported, not read on an official page"
+  ],
+  "notes": [
+    "Single, tax class I, with children (no childless care surcharge), no church tax. The solidarity surcharge (5.5% of income tax above an exemption limit, about €1,400 at €120,000) isn't modelled, so high-income estimates are low.",
+    "Simplified: taxable income is gross minus the employee flat allowances and the employee social contributions, which approximates the Vorsorgepauschale."
+  ],
+  "deductions": [
+    {
+      "name": "Arbeitnehmer-Pauschbetrag",
+      "amount": "1230"
+    },
+    {
+      "name": "Sonderausgaben-Pauschbetrag",
+      "amount": "36"
+    }
+  ],
+  "deductSocialContributions": true,
+  "formula": {
+    "kind": "DE-32a",
+    "zones": [
+      {
+        "over": "0",
+        "type": "zero"
+      },
+      {
+        "over": "12348",
+        "type": "quadratic",
+        "base": "12348",
+        "a": "914.51",
+        "b": "1400",
+        "c": "0"
+      },
+      {
+        "over": "17799",
+        "type": "quadratic",
+        "base": "17799",
+        "a": "173.10",
+        "b": "2397",
+        "c": "1034.87"
+      },
+      {
+        "over": "69878",
+        "type": "linear",
+        "rate": "0.42",
+        "minus": "11135.63"
+      },
+      {
+        "over": "277825",
+        "type": "linear",
+        "rate": "0.45",
+        "minus": "19470.38"
+      }
+    ],
+    "roundDown": true
+  },
+  "socialContributions": [
+    {
+      "name": "Rentenversicherung",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.093"
+        }
+      ],
+      "ceiling": "101400",
+      "deductible": true
+    },
+    {
+      "name": "Arbeitslosenversicherung",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.013"
+        }
+      ],
+      "ceiling": "101400",
+      "deductible": true
+    },
+    {
+      "name": "Krankenversicherung",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.0875"
+        }
+      ],
+      "ceiling": "69750",
+      "deductible": true
+    },
+    {
+      "name": "Pflegeversicherung",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.018"
+        }
+      ],
+      "ceiling": "69750",
+      "deductible": true
+    }
+  ],
+  "samples": [
+    {
+      "gross": "30000",
+      "incomeTax": "2171.00",
+      "levies": "0.00",
+      "socialContributions": "6345.00",
+      "net": "21484.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "60000",
+      "incomeTax": "9186.00",
+      "levies": "0.00",
+      "socialContributions": "12690.00",
+      "net": "38124.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "120000",
+      "incomeTax": "31127.00",
+      "levies": "0.00",
+      "socialContributions": "18107.02",
+      "net": "70765.98",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

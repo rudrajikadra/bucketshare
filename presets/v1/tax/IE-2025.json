@@ -1,0 +1,107 @@
+{
+  "id": "IE-2025",
+  "country": "IE",
+  "name": "Ireland 2025",
+  "currency": "EUR",
+  "from": "2025-01-01",
+  "to": "2025-12-31",
+  "source": "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+  "sources": [
+    "https://www.revenue.ie/en/personal-tax-credits-reliefs-and-exemptions/tax-relief-charts/index.aspx",
+    "https://www.revenue.ie/en/jobs-and-pensions/usc/standard-rates-thresholds.aspx",
+    "https://www.gov.ie/en/department-of-social-protection/services/prsi-contribution-rates/"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "PRSI Class A blended rate 0.04125 (4.1% to 30 September 2025 and 4.2% from 1 October 2025) and the €18,304 yearly exemption (€352 a week): from the Budget announcements, not read on gov.ie"
+  ],
+  "notes": [
+    "Single PAYE employee without children: €44,000 at 20%, balance at 40%, personal and employee tax credits.",
+    "PRSI uses one blended rate for the year; the weekly PRSI credit between €352.01 and €424 isn't modelled."
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0.20"
+    },
+    {
+      "over": "44000",
+      "rate": "0.40"
+    }
+  ],
+  "credits": [
+    {
+      "name": "Personal tax credit",
+      "amount": "2000"
+    },
+    {
+      "name": "Employee (PAYE) tax credit",
+      "amount": "2000"
+    }
+  ],
+  "levies": [
+    {
+      "name": "Universal Social Charge",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.005"
+        },
+        {
+          "over": "12012",
+          "rate": "0.02"
+        },
+        {
+          "over": "27382",
+          "rate": "0.03"
+        },
+        {
+          "over": "70044",
+          "rate": "0.08"
+        }
+      ],
+      "exemptAtOrBelow": "13000"
+    }
+  ],
+  "socialContributions": [
+    {
+      "name": "PRSI (Class A)",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.04125"
+        }
+      ],
+      "exemptAtOrBelow": "18304"
+    }
+  ],
+  "samples": [
+    {
+      "gross": "30000",
+      "incomeTax": "2000.00",
+      "levies": "446.00",
+      "socialContributions": "1237.50",
+      "net": "26316.50",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "60000",
+      "incomeTax": "11200.00",
+      "levies": "1346.00",
+      "socialContributions": "2475.00",
+      "net": "44979.00",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "120000",
+      "incomeTax": "35200.00",
+      "levies": "5643.80",
+      "socialContributions": "4950.00",
+      "net": "74206.20",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

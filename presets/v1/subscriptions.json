@@ -1,0 +1,408 @@
+{
+  "version": 1,
+  "services": [
+    {
+      "id": "subscription.netflix",
+      "name": "Netflix",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.disney_plus",
+      "name": "Disney+",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.prime_video",
+      "name": "Prime Video",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.apple_tv",
+      "name": "Apple TV+",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.max",
+      "name": "Max",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "HBO Max",
+        "HBO"
+      ]
+    },
+    {
+      "id": "subscription.paramount_plus",
+      "name": "Paramount+",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.jiohotstar",
+      "name": "JioHotstar",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [
+          "IN"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.stan",
+      "name": "Stan",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.binge",
+      "name": "Binge",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [
+          "AU"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.now",
+      "name": "Now",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [
+          "GB"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.canal_plus",
+      "name": "Canal+",
+      "emoji": "🎬",
+      "categoryId": "expense.subscriptions.streaming_video",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [
+          "FR"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.youtube_premium",
+      "name": "YouTube Premium",
+      "emoji": "▶️",
+      "categoryId": "expense.subscriptions.music",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "youtube"
+      ]
+    },
+    {
+      "id": "subscription.spotify",
+      "name": "Spotify",
+      "emoji": "🎵",
+      "categoryId": "expense.subscriptions.music",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.apple_music",
+      "name": "Apple Music",
+      "emoji": "🎵",
+      "categoryId": "expense.subscriptions.music",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.audible",
+      "name": "Audible",
+      "emoji": "📚",
+      "categoryId": "expense.education.books_courses",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "audiobooks"
+      ]
+    },
+    {
+      "id": "subscription.kindle_unlimited",
+      "name": "Kindle Unlimited",
+      "emoji": "📚",
+      "categoryId": "expense.education.books_courses",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "ebooks"
+      ]
+    },
+    {
+      "id": "subscription.icloud_plus",
+      "name": "iCloud+",
+      "emoji": "☁️",
+      "categoryId": "expense.subscriptions.cloud_storage",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.google_one",
+      "name": "Google One",
+      "emoji": "☁️",
+      "categoryId": "expense.subscriptions.cloud_storage",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.microsoft_365",
+      "name": "Microsoft 365",
+      "emoji": "🧰",
+      "categoryId": "expense.subscriptions.software",
+      "defaultCycle": "yearly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "office"
+      ]
+    },
+    {
+      "id": "subscription.adobe_cc",
+      "name": "Adobe Creative Cloud",
+      "emoji": "🎨",
+      "categoryId": "expense.subscriptions.software",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "photoshop",
+        "lightroom"
+      ]
+    },
+    {
+      "id": "subscription.chatgpt",
+      "name": "ChatGPT",
+      "emoji": "🤖",
+      "categoryId": "expense.subscriptions.ai_assistants",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "openai"
+      ]
+    },
+    {
+      "id": "subscription.claude",
+      "name": "Claude",
+      "emoji": "🤖",
+      "categoryId": "expense.subscriptions.ai_assistants",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "anthropic"
+      ]
+    },
+    {
+      "id": "subscription.xbox_game_pass",
+      "name": "Xbox Game Pass",
+      "emoji": "🎮",
+      "categoryId": "expense.subscriptions.gaming",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.playstation_plus",
+      "name": "PlayStation Plus",
+      "emoji": "🎮",
+      "categoryId": "expense.subscriptions.gaming",
+      "defaultCycle": "yearly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.nintendo_switch_online",
+      "name": "Nintendo Switch Online",
+      "emoji": "🎮",
+      "categoryId": "expense.subscriptions.gaming",
+      "defaultCycle": "yearly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.amazon_prime",
+      "name": "Amazon Prime",
+      "emoji": "📦",
+      "categoryId": "expense.subscriptions.shopping_memberships",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.costco",
+      "name": "Costco",
+      "emoji": "📦",
+      "categoryId": "expense.subscriptions.shopping_memberships",
+      "defaultCycle": "yearly",
+      "countries": {
+        "include": [
+          "US",
+          "CA",
+          "GB",
+          "AU",
+          "NZ",
+          "JP",
+          "ES",
+          "FR"
+        ],
+        "exclude": []
+      },
+      "keywords": []
+    },
+    {
+      "id": "subscription.duolingo",
+      "name": "Duolingo",
+      "emoji": "🗣️",
+      "categoryId": "expense.education.books_courses",
+      "defaultCycle": "yearly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "language"
+      ]
+    },
+    {
+      "id": "subscription.gym",
+      "name": "Gym membership",
+      "emoji": "🏋️",
+      "categoryId": "expense.health.gym",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "fitness"
+      ]
+    },
+    {
+      "id": "subscription.news",
+      "name": "News subscription",
+      "emoji": "📰",
+      "categoryId": "expense.subscriptions.news",
+      "defaultCycle": "monthly",
+      "countries": {
+        "include": [],
+        "exclude": []
+      },
+      "keywords": [
+        "newspaper"
+      ]
+    }
+  ]
+}

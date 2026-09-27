@@ -1,0 +1,121 @@
+{
+  "id": "CA-2025",
+  "country": "CA",
+  "name": "Canada 2025 (federal)",
+  "currency": "CAD",
+  "from": "2025-01-01",
+  "to": "2025-12-31",
+  "source": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html",
+  "sources": [
+    "https://www.canada.ca/en/revenue-agency/services/tax/individuals/tax-rates-brackets/last-year.html",
+    "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/canada-pension-plan-cpp/cpp-contribution-rates-maximums-exemptions.html",
+    "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/payroll/payroll-deductions-contributions/employment-insurance-ei/ei-premium-rates-maximums.html"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": false,
+  "unverifiedItems": [
+    "Basic personal amount $16,129 (not reduced for high incomes), CPP (5.95% from $3,500 to $71,300, CPP2 4% to $81,200) and EI (1.64% to $65,700): from CRA announcements as reported by payroll sources; canada.ca payroll pages didn't load"
+  ],
+  "notes": [
+    "Federal tax only; provincial tax uses the manual % in the app. The lowest rate is 14.5% for 2025 (15% to June, 14% from 1 July 2025).",
+    "Credits for CPP and EI contributions and the Canada employment amount aren't modelled."
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0.145"
+    },
+    {
+      "over": "57375",
+      "rate": "0.205"
+    },
+    {
+      "over": "114750",
+      "rate": "0.26"
+    },
+    {
+      "over": "177882",
+      "rate": "0.29"
+    },
+    {
+      "over": "253414",
+      "rate": "0.33"
+    }
+  ],
+  "credits": [
+    {
+      "name": "Basic personal amount",
+      "amount": "16129",
+      "atLowestRate": true
+    }
+  ],
+  "socialContributions": [
+    {
+      "name": "CPP",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "3500",
+          "rate": "0.0595"
+        }
+      ],
+      "ceiling": "71300"
+    },
+    {
+      "name": "CPP2",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "71300",
+          "rate": "0.04"
+        }
+      ],
+      "ceiling": "81200"
+    },
+    {
+      "name": "EI",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0.0164"
+        }
+      ],
+      "ceiling": "65700"
+    }
+  ],
+  "samples": [
+    {
+      "gross": "50000",
+      "incomeTax": "4911.30",
+      "levies": "0.00",
+      "socialContributions": "3586.75",
+      "net": "41501.95",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "100000",
+      "incomeTax": "14718.80",
+      "levies": "0.00",
+      "socialContributions": "5507.58",
+      "net": "79773.62",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "250000",
+      "incomeTax": "55071.08",
+      "levies": "0.00",
+      "socialContributions": "5507.58",
+      "net": "189421.34",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}

@@ -1,0 +1,613 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BucketShare tax table",
+  "type": "object",
+  "required": [
+    "id",
+    "country",
+    "name",
+    "currency",
+    "from",
+    "to",
+    "source",
+    "verifiedAt",
+    "verified",
+    "samples"
+  ],
+  "anyOf": [
+    {
+      "required": [
+        "brackets"
+      ]
+    },
+    {
+      "required": [
+        "formula"
+      ]
+    }
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}(-[A-Z]{3})?-\\d{4}(-\\d{2})?(-OLD)?$"
+    },
+    "country": {
+      "type": "string",
+      "pattern": "^[A-Z]{2}$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "string"
+    },
+    "isDefault": {
+      "type": "boolean"
+    },
+    "currency": {
+      "type": "string",
+      "pattern": "^[A-Z]{3}$"
+    },
+    "from": {
+      "type": "string",
+      "format": "date"
+    },
+    "to": {
+      "type": "string",
+      "format": "date"
+    },
+    "source": {
+      "type": "string",
+      "format": "uri"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "verifiedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "verified": {
+      "type": "boolean"
+    },
+    "unverifiedItems": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "deductions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "amount"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "taperStart": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "taperRate": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          }
+        }
+      }
+    },
+    "deductSocialContributions": {
+      "type": "boolean"
+    },
+    "brackets": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "over",
+          "rate"
+        ],
+        "properties": {
+          "over": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "rate": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "appliesTo": {
+            "enum": [
+              "excess",
+              "total"
+            ]
+          },
+          "baseAmount": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          }
+        }
+      }
+    },
+    "formula": {
+      "type": "object",
+      "required": [
+        "kind",
+        "zones"
+      ],
+      "properties": {
+        "kind": {
+          "const": "DE-32a"
+        },
+        "zones": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "over",
+              "type"
+            ],
+            "properties": {
+              "over": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "type": {
+                "enum": [
+                  "zero",
+                  "quadratic",
+                  "linear"
+                ]
+              },
+              "base": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "a": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "b": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "c": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "rate": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "minus": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              }
+            }
+          }
+        },
+        "roundDown": {
+          "type": "boolean"
+        }
+      }
+    },
+    "credits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "amount"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "amount": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "atLowestRate": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "offsets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "points"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "points": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "required": [
+                "income",
+                "amount"
+              ],
+              "properties": {
+                "income": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "amount": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "rebate": {
+      "type": "object",
+      "required": [
+        "name",
+        "maxIncome",
+        "maxAmount"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "maxIncome": {
+          "type": "string",
+          "pattern": "^-?\\d+(\\.\\d+)?$"
+        },
+        "maxAmount": {
+          "type": "string",
+          "pattern": "^-?\\d+(\\.\\d+)?$"
+        },
+        "marginalRelief": {
+          "type": "boolean"
+        }
+      }
+    },
+    "surcharge": {
+      "type": "object",
+      "required": [
+        "name",
+        "bands"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "bands": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "over",
+              "rate"
+            ],
+            "properties": {
+              "over": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "rate": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              },
+              "appliesTo": {
+                "enum": [
+                  "excess",
+                  "total"
+                ]
+              },
+              "baseAmount": {
+                "type": "string",
+                "pattern": "^-?\\d+(\\.\\d+)?$"
+              }
+            }
+          }
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "taxSurcharges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "rate"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "rate": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          }
+        }
+      }
+    },
+    "levies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "bands"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "base": {
+            "enum": [
+              "gross",
+              "taxable"
+            ]
+          },
+          "bands": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "over",
+                "rate"
+              ],
+              "properties": {
+                "over": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "rate": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "appliesTo": {
+                  "enum": [
+                    "excess",
+                    "total"
+                  ]
+                },
+                "baseAmount": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                }
+              }
+            }
+          },
+          "exemptAtOrBelow": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "shadeInRate": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "ceiling": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "deductible": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "socialContributions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "bands"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "base": {
+            "enum": [
+              "gross",
+              "taxable"
+            ]
+          },
+          "bands": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": [
+                "over",
+                "rate"
+              ],
+              "properties": {
+                "over": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "rate": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "appliesTo": {
+                  "enum": [
+                    "excess",
+                    "total"
+                  ]
+                },
+                "baseAmount": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                }
+              }
+            }
+          },
+          "exemptAtOrBelow": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "shadeInRate": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "ceiling": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "deductible": {
+            "type": "boolean"
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "studentLoans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "bands"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "bands": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "over",
+                "rate"
+              ],
+              "properties": {
+                "over": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "rate": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                },
+                "appliesTo": {
+                  "enum": [
+                    "excess",
+                    "total"
+                  ]
+                },
+                "baseAmount": {
+                  "type": "string",
+                  "pattern": "^-?\\d+(\\.\\d+)?$"
+                }
+              }
+            }
+          },
+          "note": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "samples": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": [
+          "gross",
+          "incomeTax",
+          "levies",
+          "socialContributions",
+          "net"
+        ],
+        "properties": {
+          "gross": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "incomeTax": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "levies": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "socialContributions": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "net": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "checkedWith": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "studentLoanSamples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "plan",
+          "income",
+          "repayment"
+        ],
+        "properties": {
+          "plan": {
+            "type": "string"
+          },
+          "income": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "repayment": {
+            "type": "string",
+            "pattern": "^-?\\d+(\\.\\d+)?$"
+          },
+          "checkedWith": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

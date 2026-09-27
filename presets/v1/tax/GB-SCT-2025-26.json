@@ -1,0 +1,163 @@
+{
+  "id": "GB-SCT-2025-26",
+  "country": "GB",
+  "name": "Scotland 2025–26",
+  "variant": "Scotland",
+  "currency": "GBP",
+  "from": "2025-04-06",
+  "to": "2026-04-05",
+  "source": "https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year",
+  "sources": [
+    "https://www.gov.uk/scottish-income-tax/2025-to-2026-tax-year",
+    "https://www.gov.uk/guidance/rates-and-thresholds-for-employers-2025-to-2026"
+  ],
+  "verifiedAt": "2026-09-27",
+  "verified": true,
+  "notes": [
+    "Employee with a standard Personal Allowance (tax code 1257L). Brackets apply to income after the allowance, which tapers by £1 for every £2 over £100,000.",
+    "Dividend and savings rates aren't modelled.",
+    "Scottish rates apply to non-savings, non-dividend income for Scottish taxpayers."
+  ],
+  "deductions": [
+    {
+      "name": "Personal Allowance",
+      "amount": "12570",
+      "taperStart": "100000",
+      "taperRate": "0.5"
+    }
+  ],
+  "brackets": [
+    {
+      "over": "0",
+      "rate": "0.19"
+    },
+    {
+      "over": "2827",
+      "rate": "0.20"
+    },
+    {
+      "over": "14921",
+      "rate": "0.21"
+    },
+    {
+      "over": "31092",
+      "rate": "0.42"
+    },
+    {
+      "over": "62430",
+      "rate": "0.45"
+    },
+    {
+      "over": "125140",
+      "rate": "0.48"
+    }
+  ],
+  "socialContributions": [
+    {
+      "name": "National Insurance (Class 1, category A)",
+      "base": "gross",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "12570",
+          "rate": "0.08"
+        },
+        {
+          "over": "50270",
+          "rate": "0.02"
+        }
+      ]
+    }
+  ],
+  "studentLoans": [
+    {
+      "name": "Plan 1",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "26065",
+          "rate": "0.09"
+        }
+      ]
+    },
+    {
+      "name": "Plan 2",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "28470",
+          "rate": "0.09"
+        }
+      ]
+    },
+    {
+      "name": "Plan 4",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "32745",
+          "rate": "0.09"
+        }
+      ]
+    },
+    {
+      "name": "Postgraduate loan",
+      "bands": [
+        {
+          "over": "0",
+          "rate": "0"
+        },
+        {
+          "over": "21000",
+          "rate": "0.06"
+        }
+      ]
+    }
+  ],
+  "samples": [
+    {
+      "gross": "30000",
+      "incomeTax": "3482.82",
+      "levies": "0.00",
+      "socialContributions": "1394.40",
+      "net": "25122.78",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "60000",
+      "incomeTax": "13213.80",
+      "levies": "0.00",
+      "socialContributions": "3210.60",
+      "net": "43575.60",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "110000",
+      "incomeTax": "37513.80",
+      "levies": "0.00",
+      "socialContributions": "4210.60",
+      "net": "68275.60",
+      "checkedWith": "tax_reference.py from the published rates"
+    },
+    {
+      "gross": "150000",
+      "incomeTax": "59666.10",
+      "levies": "0.00",
+      "socialContributions": "5010.60",
+      "net": "85323.30",
+      "checkedWith": "tax_reference.py from the published rates"
+    }
+  ]
+}
